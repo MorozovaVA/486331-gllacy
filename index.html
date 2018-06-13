@@ -9,7 +9,9 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="logo"><img src="#" alt="Логотип магазина"></div>
+      <div class="logo">
+        <img src="img/Logo.png" width="154" height="64" alt="Логотип магазина">
+      </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="catalog.html" title="Переход на страницу каталога">Каталог</a></li>
@@ -32,12 +34,33 @@
     <!-- Основная часть -->
     <main class="container">
       <section class="promo">
-        <div class="slide">
-          <img src="#" alt="изображение мороженого">
+        <div class="slide slide-1">
+          <img src="img/background/slider-1.png" width="1045" height="881" alt="изображение мороженого">        
+          <span class="promo-text">Крем брюле и пломбир с малиновым джемом</span>
+          <button class="order order-cream">Давайте оба!</button>          
         </div>
-        <span class="promo-text">Крем брюле и пломбир с малиновым джемом</span>
-        <button class="order order-cream">Давайте оба!</button>
-        <span class="carousel">Слайдер изображений</span>
+        <div class="slide slide-2">
+          <img src="img/background/slider-2.png" width="1045" height="881" alt="изображение мороженого">          
+          <span class="promo-text">Шоколадный пломбир и лимонный сорбет </span>
+          <button class="order order-cream">Давайте оба!</button>        
+        </div>
+        <div class="slide slide-3">
+          <img src="img/background/slider-3.png" width="1045" height="881" alt="изображение мороженого">        
+          <span class="promo-text">Пломбир с помадкой и клубничный щербет</span>
+          <button class="order order-cream">Давайте оба!</button>
+          <ul class="slides-switches">          
+        </div>
+        <ul class="slides-switches">
+            <li class="slide-radio">
+              <button class="slide-btn" type="button">Первый слайд</button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn" type="button">Второй слайд</button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn" type="button">Третий слайд</button>
+            </li>
+        </ul>
       </section>
       <section class="special-offer">
         <div class="special-offer special-offer-raspberry">
@@ -53,26 +76,26 @@
       </section>
       <section class="catalog">
         <div class="cream cream-1">
-          <span>хит</span>
-          <img src="#" alt="мороженое крупным планом">
+          <div class="sticker"></div>
+          <img src="img/cream/cream-1.jpg" width="200" height="200" alt="мороженое крупным планом">
           <p>310&#8381;<span>/кг</span></p>
           <a href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
         <div class="cream cream-2">
-          <span>хит</span>
-          <img src="#" alt="мороженое крупным планом">
+          <div class="stiker"></div>
+          <img src="img/cream/cream-2.jpg" width="200" height="200" alt="мороженое крупным планом">
           <p>380&#8381;<span>/кг</span></p>
-          <a title="Сливочно-кофейное с кусочками шоколада">Сливочно-кофейное с кусочками шоколада</a>
+          <a href="#" title="Сливочно-кофейное с кусочками шоколада">Сливочно-кофейное с кусочками шоколада</a>
         </div>
         <div class="cream cream-3">
-          <span>хит</span>
-          <img src="#" alt="мороженое крупным планом">
+          <div class="stiker"></div>
+          <img src="img/cream/cream-3.jpg" width="200" height="200" alt="мороженое крупным планом">
           <p>355&#8381;<span>/кг</span></p>
           <a href="#" title="Сливочно-клубничное с присыпкой из белого шоколада">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
         <div class="cream cream-4">
-          <span>хит</span>
-          <img src="#" alt="мороженое крупным планом">
+          <div class="stiker"></div>
+          <img src="img/cream/cream-4.jpg" width="200" height="200" alt="мороженое крупным планом">
           <p>415&#8381;<span>/кг</span></p>
           <a href="#" title="Сливочное крем-брюле с карамельной подливкой">Сливочное крем-брюле с карамельной подливкой</a>
           </div>
@@ -107,13 +130,14 @@
         </article>
         <div class="subscription">
           <p>Подпишитесь на нашу сладкую рассылку и будете в курсе всего самого вкусного, что у нас происходит.
-             Обещаем не спамить, и не слать всякой ненужной ерунды. Честно =)</p>
+            Обещаем не спамить, и не слать всякой ненужной ерунды. Честно =)</p>
           <!-- Форма для отправки e-mail -->
           <button>Отправить</button>
         </div>    
       </section>
       <section class="map">
         <div class="location">
+          <img src="img/background/map.jpg" width="1050" height="430" alt="Карта магазина с адресом ул. Большая Конюшенная 19/8, Санкт-Петербург">
           <p class="address">Адрес главного офиса и офлайн магазина: <br>
             <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
           </p>
@@ -150,7 +174,9 @@
           </table>
         </div>
         <div class="copyright">
-        <a class="logo-academy" href="https://htmlacademy.ru" target="blank" title="Переход на сайт HTML Academy" >Лого академии</a>
+        <a class="logo-academy" href="https://htmlacademy.ru" target="blank" title="Переход на сайт HTML Academy">
+          <img src="img/logo-htmlacademy.png" width="108" height="39" alt="Логотип HTML Academy">
+        </a>
         <p>Сделано в <a href="https://htmlacademy.ru" target="blank">HTML Academy</a>&copy; 2017</p>
         </div>
       </footer>
