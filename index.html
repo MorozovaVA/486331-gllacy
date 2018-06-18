@@ -6,7 +6,9 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="description" content="Магазин мороженого/ Собственное производство, натуральные ингридиенты.">
       <title>HTML Academy: Глейси</title>
-      <link href="css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet"> 
+      <link href="css/style.css" rel="stylesheet">      
   </head>
   <body>
     <header class="page-header">
@@ -50,17 +52,17 @@
         <div class="slide slide-1">
           <img src="img/background/slider-1.png" width="1045" height="881" alt="изображение мороженого">        
           <span class="promo-text">Крем брюле и пломбир с малиновым джемом</span>
-          <button class="order order-cream">Давайте оба!</button>          
+          <button class="button order order-cream">Давайте оба!</button>          
         </div>
-        <div class="slide slide-2">
+        <div class="slide slide-2 visualy-hidden">
           <img src="img/background/slider-2.png" width="1045" height="881" alt="изображение мороженого">          
           <span class="promo-text">Шоколадный пломбир и лимонный сорбет </span>
-          <button class="order order-cream">Давайте оба!</button>        
+          <button class="button order order-cream">Давайте оба!</button>        
         </div>
-        <div class="slide slide-3">
+        <div class="slide slide-3 visualy-hidden">
           <img src="img/background/slider-3.png" width="1045" height="881" alt="изображение мороженого">        
           <span class="promo-text">Пломбир с помадкой и клубничный щербет</span>
-          <button class="order order-cream">Давайте оба!</button>                
+          <button class="button order order-cream">Давайте оба!</button>                
         </div>
         <ul class="slides-switches">
           <li class="slide-radio">
@@ -78,19 +80,19 @@
         <div class="special-offer special-offer-raspberry">
           <h2>Малинка даром!</h2>
           <p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="order order-raspberry">Хочу варенье</button>
+          <button class="button special-offer special-offer-raspberry">Хочу варенье</button>
         </div>
-        <div class=" special-offer special-offer-chocolate">
+        <div class="special-offer special-offer-chocolate">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2кг любого пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button class="order order-chocolate">Хочу шоколадки!</button>
+          <button class="button special-offer special-offer-chocolate ">Хочу шоколадки!</button>
         </div>
       </section>
       <section class="catalog">
         <div class="cream cream-1">
           <div class="sticker"></div>
           <img src="img/cream/cream-1.jpg" width="200" height="200" alt="мороженое крупным планом">
-          <p>310&#8381;<span>/кг</span></p>
+          <p>310 &#8381;<span>/кг</span></p>
           <a href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
         <div class="cream cream-2">
@@ -115,22 +117,22 @@
       <section class="about-us">
         <h1>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
         <div class="our-cream">
-          <span class="icon-cream">Иконка мороженого</span>
+          <span class="icon icon-cream"></span>
           <p>Все наше мороженое изготовлено на собственном производстве, с использованием современного оборудования 
             и проверенных временем технологий.</p>
         </div>
         <div class="composition">
-            <span class="icon-foliage">Иконка листика</span>
+            <span class="icon icon-foliage"></span>
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
               Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </div>
         <div class="ingredients">
-            <span class="icon-cream">Иконка коровы</span>
+            <span class="icon icon-cow"></span>
             <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний,
                с которыми нас связывает долговременное сотрудничество.</p>
         </div>
         <div class="delivery">
-            <span class="icon-cream">Иконка градусника</span>
+            <span class="icon icon-thermometer"></span>
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
                который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </div>    
@@ -140,12 +142,14 @@
           <p>Новое в нашем блоге</p>
           <h2><a>10 способов сервировки фруктовых щербетов к столу</a></h2>
         </article>
-        <div class="subscription">
+      </section>
+      <section class="subscription">
+        <div class="subscription-mail">          
           <p>Подпишитесь на нашу сладкую рассылку и будете в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить, и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="mailing" action="https://echo.htmlacademy.ru" method="post">
             <input type="email" placeholder="Электронная почта">
-            <button type="submit">Отправить</button>
+            <button class="button subscription-button" type="submit">Отправить</button>
           </form>
         </div>    
       </section>
@@ -160,29 +164,30 @@
             <a href="tel:88124502525" title="телефон для заказов">8 812 450 25-25</a> <br>
             (с 10 до 20 ежедневно)
           </p>
-          <button>Форма обратной связи</button>          
+          <button class="button feedback-button" type="button">Форма обратной связи</button>          
         </div>
-        <form class="feedback visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+        <form class="feedback-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+          <legend>Мы обязательно вам ответим!</legend>
           <input type="text" name="name" placeholder="Как вас зовут?">
           <input type="email" name="email" placeholder="Ваша почта для ответа?">
           <textarea rows="8" cols="43">Напишите что-нибудь..</textarea>
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
         <div class="social">
           <ul>
-            <li><a class="social-button tw" href="#" title="твиттер магазина">Твиттер</a></li>
-            <li><a class="social-button inst" href="#" title="инстаграм магазина">Инстаграм</a></li>
-            <li><a class="social-button fb" href="#" title="Фейсбук магазина">Фейсбук</a></li>
-            <li><a class="social-button vk" href="#" title="Вконтакте магазина">Вконтакте</a></li>
+            <li><a class="social-button Twitter" href="#" title="твиттер магазина"></a></li>
+            <li><a class="social-button Instagram" href="#" title="инстаграм магазина"></a></li>
+            <li><a class="social-button Facebook" href="#" title="Фейсбук магазина"></a></li>
+            <li><a class="social-button VKontakte" href="#" title="Вконтакте магазина"></a></li>
           </ul>
         </div>
         <div class="table">
           <table>
             <tr>
-              <td><a href="#" title="Информация для поставщиков">&#10084;</a></td>
+              <td>&#10084;</td>
               <td><a href="#" title="Информация для поставщиков"><b>Для поставщиков</b></a></td>
               <td><a href="#" title="Список документов магазина">Наши документы</a></td>
             </tr>

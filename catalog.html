@@ -6,7 +6,10 @@
 			<meta http-equiv="X-UA-Compatible" content="ie=edge">
 			<meta name="description" content="Магазин мороженого/ Собственное производство, натуральные ингридиенты.">
       <title>HTML Academy: Глейси</title>
-      <link href="css/style.css" rel="stylesheet">     
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+      <link href="css/normalize.css" rel="stylesheet"> 
+      <link href="css/style.css" rel="stylesheet">
+         
 	</head>
 	<body>
 		<header class="page-header">
@@ -17,7 +20,7 @@
 			</div>
 				<nav class="main-navigation">
 					<ul class="site-navigation">
-						<li><a href="#" title="Переход на страницу каталога">Каталог</a></li>
+						<li class="check"><a href="#" title="Переход на страницу каталога">Каталог</a></li>
 						<li><a href="#" title="Информация о доставке и оплате" >Доставка и оплата</a></li>
 						<li><a href="#" title="Информация о компании">О компании</a></li>
 					</ul>
@@ -41,11 +44,11 @@
           <a href="#" title="Востановить пароль">Забыли пароль?</a>
           <a href="#" title="Зарегестрироваться">Новая регистрация</a>
         </form>
-        <form class="basket visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+        <!-- <form class="basket visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
           <button class="closed" type="button">Закрыть</button>
           <button class="closed" type="button">Закрыть</button>
           <button class="button" type="submit">Заказать</button>
-        </form>
+        </form> -->
 			<div class="info">
 				<span class="work-time">С 10 до 20 ежедневно</span> 
 				<span class="phone-number"><a href="tel:88124502525" title="телефон для связи">8 812 450-25-25</a></span>
@@ -53,20 +56,23 @@
 		</header>
 		<main>
 			<header class="main-header">
-				<p> <a href="index.html" title="Возврат на главную страницу">Главная</a> &raquo; Каталог &raquo; Сливочное</p>
+				<p class="navigation"> 
+					<a href="index.html" title="Возврат на главную страницу"><span>Главная</span></a>
+					&raquo; <span> Каталог</span>  &raquo; <span class="active">Сливочное</span>
+				</p>
         <h1> Сливочное мороженое</h1>        
 				<form class="sort" action="https://echo.htmlacademy.ru" method="post">
-        <label>Сортировка</label>
+        <legend>Сортировка:</legend>
         <select name="sort">
           <option value="fame">По популярности</option>
           <option value="not expensive">Сначала недорогие</option>
           <option value="expensive">Дорогие</option>
           <option value="fat">По жирности</option>
         </select>
-        <label>Цена:100 руб. - 500 руб.</label>
+        <legend>Цена: 100 руб. - 500 руб.</legend>
         <input type="range" min="100" max="500" step="5">
         <fieldset>
-          <legend>Жирность</legend>
+          <legend>Жирность:</legend>
           <label>
             <input type="radio" name="fat-content" value="0">
             0%
@@ -85,7 +91,7 @@
           </label>
         </fieldset>
         <fieldset>
-          <legend>Наполнители</legend>
+          <legend>Наполнители:</legend>
           <label>
             <input type="checkbox" name="chocolate">
             шоколадные
@@ -184,25 +190,25 @@
 					<a href="#" title="Сливочное с мятным сиропом">Сливочное с мятным сиропом</a>					
 				</div>		
 				<div class="number-page">
-          <button class="button page-button" type="button">Назад</button>
+          <button class="page-button" type="button">Назад</button>
 					<ul class="page-list">
-            <li>1</li>
+            <li class="active">1</li>
             <li>2</li>
             <li>3</li>
             <li>4</li>
             <li>5</li>
           </ul>
-          <button class="button page-button" type="button">Вперед</button>
+          <button class="page-button" type="button">Вперед</button>
 				</div>
 			</section>	
 		</main>
 		<footer class="page-footer">
 			<div class="social">
 				<ul>
-					<li><a class="social-button Twitter" href="#" title="твиттер магазина">Твиттер</a></li>
-					<li><a class="social-button Instagram" href="#" title="инстаграм магазина">Инстаграм</a></li>
-					<li><a class="social-button Facebook" href="#" title="Фейсбук магазина">Фейсбук</a></li>
-					<li><a class="social-button VKontakte" href="#" title="Вконтакте магазина">Вконтакте</a></li>
+					<li><a class="social-button Twitter" href="#" title="твиттер магазина"></a></li>
+					<li><a class="social-button Instagram" href="#" title="инстаграм магазина"></a></li>
+					<li><a class="social-button Facebook" href="#" title="Фейсбук магазина"></a></li>
+					<li><a class="social-button VKontakte" href="#" title="Вконтакте магазина"></a></li>
 				</ul>
 			</div>
 				<div class="table">

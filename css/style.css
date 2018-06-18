@@ -1,4 +1,334 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body{
-    font-family: 'Roboto', sans-serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica,  sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #849d8f;
+}
+/* Стилизация header */
+header a{
+    list-style: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+header ul{
+    list-style: none;
+}
+.site-navigation{
+    font-size: 16px;    
+    line-height: 18px;
+    text-decoration: underline;
+}
+.main-navigation  {    
+    line-height: 18px;   
+}
+.user-navigation {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;       
+}
+.work-time{
+    font-size: 14px;
+    line-height: 16px;
+}
+.phone-number{
+    font-size: 22px;
+    line-height: 24px;
+}
+.search,
+.enter {
+    background-color: #f8f7f4;
+    
+}
+.search input,
+.enter input{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;   
+    color: #999999;
+}
+.enter a{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;   
+    color: #323232;
+    text-decoration: underline;
+}
+.enter a:hover{
+    color: #e84d37;
+    text-decoration: none;
+}
+.enter a:active{
+    color: #e84d37;
+    text-decoration: underline;
+}
+
+ /* Стилизация main */
+.promo-text{
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.special-offer h2{
+    font-size: 35px;
+    line-height: 41px;
+}
+.special-offer p{
+    font-size: 18px;
+    line-height: 22px;
+}
+.special-offer-raspberry{
+    background-image: url("../img/background/raspberry-bg.jpg");
+    background-repeat: no-repeat;    
+}
+.special-offer-chocolate{
+    background-image: url("../img/background/chocolate-bg.jpg");
+    background-repeat: no-repeat; 
+}
+.button{
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;  
+    background-color: #ec573b;
+    border: none; 
+}
+
+.cream p{
+    font-size: 45px;
+    line-height: 45px;
+}
+.cream span{
+    font-size: 36px;
+    line-height: 45px;
+}
+/* .stiker{
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/background/sticker.svg");
+    background-repeat: no-repeat; 
+} */
+.cream a{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.cream a:hover{
+    color: #ffbc9e;
+    text-decoration: none;
+}
+.cream a:active{
+    color: #ffbc9e;
+    text-decoration: underline;
+}
+.about-us{
+    color: #323232;
+    background-image: url("../img/background/about-us-bg.jpg");
+    background-repeat: no-repeat;
+}
+.about-us h1{
+    font-size: 24px;
+    line-height: 30px;
+}
+.about-us p{
+    font-size: 16px;
+    line-height: 22px;  
+}
+.about-us .icon{
+    width: 49px;
+    height: 49px;
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position: 50% 50%;      
+}
+.icon-cream {
+    background-image: url("../img/icon/cream-icon.png");
+}
+.icon-foliage{
+    background-image: url("../img/icon/foliage.png");
+}
+.icon-cow{
+    background-image: url("../img/icon/cow.png");
+}
+.icon-thermometer{
+    background-image: url("../img/icon/thermomiter.png");
+}
+article p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #5a5a5a;   
+}
+article a{
+    font-size: 24px;
+    line-height: 30px;    
+    color: #353535;
+    background-color: rgba(225, 204, 205, 8);
+    text-decoration: underline;    
+}
+article{
+    background-color: #ffffff;
+   background-image: url("../img/background/article-bg.jpg");
+    background-repeat: no-repeat;
+}
+.subscription p{
+    font-size: 16px;
+    line-height: 22px; 
+    color: #5a5a5a; 
+}
+
+.subscription-mail{
+    background-color: #f8f7f4;
+}
+.location{
+    color: #323232;
+    background-color: #fdfdfd;
+
+}
+.address, .phone{
+    font-size: 14px;
+    line-height: 20px; 
+    font-weight: 400; 
+}
+.address b{
+    font-size: 18px;
+    line-height: 24px; 
+}
+.phone a{
+    font-size: 18px;
+    line-height: 22px; 
+    text-decoration: none;
+    color: #323232;
+}
+.feedback-form{
+    background-color: #f8f7f4;
+}
+.feedback-form legend{
+    font-size: 24px;
+    line-height: 28px; 
+    font-weight: 500;
+    color: #323232;
+}
+.feedback-form input{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;   
+    color: #999999;
+}
+.feedback-form textarea{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;   
+    color: #999999;
+}
+/* Стилизация footer */
+.social li{
+    list-style: none;
+}
+.Twitter{
+    background-image: url("../img/icon/tw-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Instagram{
+    background-image: url("../img/icon/inst-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Facebook{
+    background-image: url("../img/icon/fb-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.VKontakte{
+    background-image: url("../img/icon/vk-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.table a{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.table a:hover,
+.copyright a:hover {
+    color: #ffbc9e;
+    text-decoration: none;
+}
+.table a:active,
+.copyright a:active {
+    color: #ffbc9e;
+    text-decoration: underline;
+}
+.copyright p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.copyright a{
+    color: #ffffff;
+    font-weight: 400;
+}
+/* стилизация каталога */
+.check{
+    text-decoration: none;
+    background-color: #ec573b;
+}
+.navigation span {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    text-decoration: underline;  
+}
+.navigation a:hover{
+    color: #ffbc9e;
+    text-decoration: none;
+}
+.navigation a:active{
+    color: #ffbc9e;
+    text-decoration: underline; 
+}
+.active{
+    text-decoration: none;
+}
+.navigation h1{
+    font-size: 35px;
+    line-height: 41px;
+}
+.sort legend{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+.sort label{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.sort select{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #aabab0;
+}
+.page-list{
+    list-style: none;
+}
+.page-list li:hover{
+    background-color: #aabab0;
+}
+.page-list li:active{
+    color: #323232;
+    background-color: #ffffff;
+}
+.page-list .active{
+    color: #323232;
+    background-color: #ffffff;
 }
