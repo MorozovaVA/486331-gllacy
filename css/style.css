@@ -1,5 +1,5 @@
 
-body {
+body {         
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, Helvetica,  sans-serif;
@@ -8,8 +8,39 @@ body {
     font-weight: bold;
     color: #ffffff;
     background-color: #849d8f;
+    width: 900px;    
 }
 /* Стилизация header */
+.background{
+    min-width: 900px;
+    max-width: 1200px;
+    background-image: url("../img/background/slider-1.png");
+    background-repeat: no-repeat;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-navigation-wrapper{
+    min-width: 900px; 
+    
+}
+.container-center{
+    min-width: 860px;    
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.main-navigation-wrapper .container-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+.logo{
+    width: 154px;
+    height: 64px;
+}
 header a{
     list-style: none;
     color: #ffffff;
@@ -17,19 +48,28 @@ header a{
 }
 header ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.site-navigation{
+.site-navigation{   
     font-size: 16px;    
     line-height: 18px;
     text-decoration: underline;
 }
-.main-navigation  {    
+.main-navigation  {
+    min-width: 324px;
+    min-height: 17px;
+      
     line-height: 18px;   
 }
 .user-navigation {
+    min-width: 245px;  
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;       
+}
+.info{
+    min-width: 146px;      
 }
 .work-time{
     font-size: 14px;
@@ -41,8 +81,14 @@ header ul{
 }
 .search,
 .enter {
-    background-color: #f8f7f4;
-    
+    background-color: #f8f7f4; 
+    display: none;   
+}
+.search{
+    width: 340px;
+}
+.enter{
+    width: 277px;
 }
 .search input,
 .enter input{
@@ -68,9 +114,10 @@ header ul{
 }
 
  /* Стилизация main */
-.promo-text{
+.promo-text{    
     font-size: 60px;
     line-height: 60px;
+   
 }
 
 .special-offer h2{
@@ -83,11 +130,19 @@ header ul{
 }
 .special-offer-raspberry{
     background-image: url("../img/background/raspberry-bg.jpg");
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat; 
+    border-radius: 15px;   
+    width: 420px;
+    
 }
 .special-offer-chocolate{
     background-image: url("../img/background/chocolate-bg.jpg");
     background-repeat: no-repeat; 
+    border-radius: 15px;   
+    width: 420px; 
+}
+.special-offer{
+    margin-bottom: 35px;
 }
 .button{
     font: inherit;
@@ -96,6 +151,16 @@ header ul{
     vertical-align: middle;  
     background-color: #ec573b;
     border: none; 
+    border-radius: 25px;
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);        
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);      
+}
+.cream img{
+    border-radius: 50%;
+}
+.cream{
+    width: 200px;
+    
 }
 
 .cream p{
@@ -127,9 +192,12 @@ header ul{
     text-decoration: underline;
 }
 .about-us{
+    margin:0 auto;
     color: #323232;
     background-image: url("../img/background/about-us-bg.jpg");
     background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 860px;
 }
 .about-us h1{
     font-size: 24px;
@@ -173,22 +241,36 @@ article a{
 }
 article{
     background-color: #ffffff;
-   background-image: url("../img/background/article-bg.jpg");
+    background-image: url("../img/background/article-bg.jpg");
     background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 420px;
+
+}
+.subscription{
+    background-image: url("../img/background/form-bg.svg");
+    border-radius: 15px;
+    width: 420px;
 }
 .subscription p{
     font-size: 16px;
     line-height: 22px; 
-    color: #5a5a5a; 
+    color: #5a5a5a;     
 }
 
 .subscription-mail{
     background-color: #f8f7f4;
+    width: 410px;
 }
-.location{
-    color: #323232;
-    background-color: #fdfdfd;
-
+.map{
+    margin-bottom: 20px;
+}
+.location{    
+    color: #323232;    
+}
+.block-address{  
+    background-color: #fdfdfd;  
+    width: 300px;        
 }
 .address, .phone{
     font-size: 14px;
@@ -206,7 +288,10 @@ article{
     color: #323232;
 }
 .feedback-form{
-    background-color: #f8f7f4;
+    width: 477px;
+    min-height: 422px;
+    background-color: #f8f7f4;  
+    display: none;  
 }
 .feedback-form legend{
     font-size: 24px;
@@ -279,6 +364,10 @@ article{
 .check{
     text-decoration: none;
     background-color: #ec573b;
+    border: none; 
+    border-radius: 25px;
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);        
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 .navigation span {
     font-size: 14px;
