@@ -13,46 +13,51 @@
 	</head>
 	<body>
 		<header class="page-header">
-			<div class="logo">
-				<a href="index.html" title="Возврат на главную страницу">
-					<img src="img/Logo.png" width="154" height="64" alt="Логотип магазина">
-				</a>
-			</div>
-				<nav class="main-navigation">
-					<ul class="site-navigation">
-						<li class="check"><a href="#" title="Переход на страницу каталога">Каталог</a></li>
-						<li><a href="#" title="Информация о доставке и оплате" >Доставка и оплата</a></li>
-						<li><a href="#" title="Информация о компании">О компании</a></li>
-					</ul>
-				</nav>
-				<nav class="user-navigation">
-					<ul>
-						<li>Поиск</li>
-						<li class="login-link">
-              <a class="login-link" href="login.html">Вход</a>
-            </li>
-						<li>Корзина</li>
-					</ul>       
-        </nav> 
-        <form class="search visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
-          <input type="search" placeholder="Что ищем?">
-        </form>
-        <form class="enter visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" name="email" placeholder="Электронная почта">
-          <input type="password" name="password" placeholder="Пароль">
-          <button class="button" type="submit">Войти</button>
-          <a href="#" title="Востановить пароль">Забыли пароль?</a>
-          <a href="#" title="Зарегестрироваться">Новая регистрация</a>
-        </form>
-        <!-- <form class="basket visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
-          <button class="closed" type="button">Закрыть</button>
-          <button class="closed" type="button">Закрыть</button>
-          <button class="button" type="submit">Заказать</button>
-        </form> -->
-			<div class="info">
-				<span class="work-time">С 10 до 20 ежедневно</span> 
-				<span class="phone-number"><a href="tel:88124502525" title="телефон для связи">8 812 450-25-25</a></span>
-			</div>     
+			<div class="container-flex">
+				<div class="main-navigation-wrapper">
+					<div class="container-center">
+					<div class="logo">
+						<a href="index.html" title="Возврат на главную страницу">
+							<img src="img/Logo.png" width="154" height="64" alt="Логотип магазина">
+						</a>
+					</div>
+						<nav class="main-navigation">
+							<ul class="site-navigation">
+								<li class="check"><a href="#" title="Переход на страницу каталога">Каталог</a></li>
+								<li><a href="#" title="Информация о доставке и оплате" >Доставка и оплата</a></li>
+								<li><a href="#" title="Информация о компании">О компании</a></li>
+							</ul>
+						</nav>
+						<nav class="user-navigation">
+							<ul>
+								<li>Поиск</li>
+								<li class="login-link">
+									<a class="login-link" href="login.html">Вход</a>
+								</li>
+								<li>Корзина</li>
+							</ul>       
+						</nav> 
+						<form class="search visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+							<input type="search" placeholder="Что ищем?">
+						</form>
+						<form class="enter visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+							<input type="email" name="email" placeholder="Электронная почта">
+							<input type="password" name="password" placeholder="Пароль">
+							<button class="button" type="submit">Войти</button>
+							<a href="#" title="Востановить пароль">Забыли пароль?</a>
+							<a href="#" title="Зарегестрироваться">Новая регистрация</a>
+						</form>
+						<!-- <form class="basket visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+							<button class="closed" type="button">Закрыть</button>
+							<button class="closed" type="button">Закрыть</button>
+							<button class="button" type="submit">Заказать</button>
+						</form> -->
+					<div class="info">
+						<span class="work-time">С 10 до 20 ежедневно</span> 
+						<span class="phone-number"><a href="tel:88124502525" title="телефон для связи">8 812 450-25-25</a></span>
+					</div>     
+				</div>
+			</div>			
 		</header>
 		<main>
 			<header class="main-header">
@@ -60,135 +65,153 @@
 					<a href="index.html" title="Возврат на главную страницу"><span>Главная</span></a>
 					&raquo; <span> Каталог</span>  &raquo; <span class="active">Сливочное</span>
 				</p>
-        <h1> Сливочное мороженое</h1>        
-				<form class="sort" action="https://echo.htmlacademy.ru" method="post">
-        <legend>Сортировка:</legend>
-        <select name="sort">
-          <option value="fame">По популярности</option>
-          <option value="not expensive">Сначала недорогие</option>
-          <option value="expensive">Дорогие</option>
-          <option value="fat">По жирности</option>
-        </select>
-        <legend>Цена: 100 руб. - 500 руб.</legend>
-        <input type="range" min="100" max="500" step="5">
-        <fieldset>
-          <legend>Жирность:</legend>
-          <label>
-            <input type="radio" name="fat-content" value="0">
-            0%
-          </label>
-          <label>
-            <input type="radio" name="fat-content" value="10">
-            10%
-          </label>
-          <label>
-            <input type="radio" name="fat-content" value="-30">
-            До 30%
-          </label>
-          <label>
-            <input type="radio" name="fat-content" value="+30">
-            Выше 30%
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Наполнители:</legend>
-          <label>
-            <input type="checkbox" name="chocolate">
-            шоколадные
-          </label>
-          <label>
-            <input type="checkbox" name="sugar">
-            сахарные присыпки
-          </label>
-          <label>
-            <input type="checkbox" name="fruits">
-            фрукты
-          </label>
-          <label>
-            <input type="checkbox" name="syrup">
-            сиропы
-          </label>
-          <label>
-            <input type="checkbox" name="jam">
-            джемы
-          </label>
-          </fieldset>
-          <button>Применить</button>
-        </form>				
+				<h1> Сливочное мороженое</h1>
+				<div class="container-form">				
+					<form class="sort" action="https://echo.htmlacademy.ru" method="post">
+						<div class="form-flex">
+							<p>
+								<legend>Сортировка:</legend>
+								<select name="sort">
+									<option value="fame">По популярности</option>
+									<option value="not expensive">Сначала недорогие</option>
+									<option value="expensive">Дорогие</option>
+									<option value="fat">По жирности</option>
+								</select>
+							</p>
+							<p>	
+								<legend>Цена: 100 руб. - 500 руб.</legend>
+								<input type="range" class="range" min="100" max="500" step="5">
+							</p>
+							<p>	
+								<fieldset class="fat-content">
+									<legend>Жирность:</legend>
+									<label>
+										<input type="radio" name="fat-content" value="0">
+										0%
+									</label>
+									<label>
+										<input type="radio" name="fat-content" value="10">
+										10%
+									</label>
+									<label>
+										<input type="radio" name="fat-content" value="-30">
+										До 30%
+									</label>
+									<label>
+										<input type="radio" name="fat-content" value="+30">
+										Выше 30%
+									</label>
+								</fieldset>
+							</p>
+							<p>	
+								<fieldset class="filler">
+									<legend>Наполнители:</legend>
+									<label>
+										<input type="checkbox" name="chocolate">
+										шоколадные
+									</label>
+									<label>
+										<input type="checkbox" name="sugar">
+										сахарные присыпки
+									</label>
+									<label>
+										<input type="checkbox" name="fruits">
+										фрукты
+									</label>
+									<label>
+										<input type="checkbox" name="syrup">
+										сиропы
+									</label>
+									<label>
+										<input type="checkbox" name="jam">
+										джемы
+									</label>
+								</fieldset>						
+								<button type="submit" class="button-form">Применить</button>
+							</p>		
+						</div>													
+					</form>					
+				</div>				
 			</header>
 			<section class="assortment">
-				<div class="cream cream-1">
-					<div class="sticker"></div>
-					<img src="img/cream/cream-1.jpg" width="200" height="200" alt="мороженое крупным планом">
-					<p>310&#8381;<span>/кг</span></p>
-					<a href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-				</div>			
-		 		<div class="cream cream-2">
-          <div class="sticker"></div>
-          <img src="img/cream/cream-2.jpg" width="200" height="200" alt="мороженое крупным планом">
-          <p>380&#8381;<span>/кг</span></p>
-          <a title="Сливочно-кофейное с кусочками шоколада">Сливочно-кофейное с кусочками шоколада</a>
-        </div>
-        <div class="cream cream-3">
-          <div class="sticker"></div>
-          <img src="img/cream/cream-3.jpg" width="200" height="200" alt="мороженое крупным планом">
-          <p>355&#8381;<span>/кг</span></p>
-          <a href="#" title="Сливочно-клубничное с присыпкой из белого шоколада">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        </div>
-        <div class="cream cream-4">
-          <div class="sticker"></div>
-          <img src="img/cream/cream-4.jpg" width="200" height="200" alt="мороженое крупным планом">
-          <p>415&#8381;<span>/кг</span></p>
-          <a href="#" title="Сливочное крем-брюле с карамельной подливкой">Сливочное крем-брюле с карамельной подливкой</a>
-				</div>
-				<div class="cream cream-5">
-					<div class="sticker"></div>
-					<img src="img/cream/cream-5.jpg" width="200" height="200" alt="мороженое крупным планом">
-					<p>325&#8381;<span>/кг</span></p>
-					<a href="#" title="Сливочное с брусничным джемом">Сливочное с брусничным джемом</a>
-				</div>
-				<div class="cream cream-6">
-					<div class="sticker"></div>
-					<img src="img/cream/cream-6.jpg" width="200" height="200" alt="мороженое крупным планом">
-					<p>410&#8381;<span>/кг</span></p>
-					<a href="#" title="Сливочно-черничное с цельными ягодами черники">Сливочно-черничное с цельными ягодами черники</a>					
-				</div>
-				<div class="cream cream-7">
-					<div class="sticker"></div>
-					<img src="img/cream/cream-7.jpg" width="200" height="200" alt="мороженое крупным планом">
-					<p>375&#8381;<span>/кг</span></p>
-					<a href="#" title="Сливочно-лимонное с карамельной присыпкой">Сливочно-лимонное с карамельной присыпкой</a>			
-				</div>
-				<div class="cream cream-8">
-					<div class="sticker"></div>
-					<img src="img/cream/cream-8.jpg" width="200" height="200" alt="мороженое крупным планом">
-					<p>320&#8381;<span>/кг</span></p>
-					<a href="#" title="Сливочное с шоколадной стружкой">Сливочное с шоколадной стружкой</a>					
-				</div>
-				<div class="cream cream-9">
-					<div class="sticker"></div>
-					<img src="img/cream/cream-9.jpg" width="200" height="200" alt="мороженое крупным планом">
-					<p>440&#8381;<span>/кг</span></p>
-					<a href="#" title="Сливочно-ванильное с кусочками шоколада">Сливочно-ванильное с кусочками шоколада</a>					
-				</div>
-				<div class="cream cream-10">
-					<div class="sticker"></div>
-					<img src="img/cream/cream-10.jpg" width="200" height="200" alt="мороженое крупным планом">
-					<p>435&#8381;<span>/кг</span></p>
-					<a href="#" title="Сливочное с ментоловым сиропом">Сливочное с ментоловым сиропом</a>					
-				</div>
-				<div class="cream cream-11">
-					<div class="sticker"></div>
-					<img src="img/cream/cream-11.jpg" width="200" height="200" alt="мороженое крупным планом">
-					<p>355&#8381;<span>/кг</span></p>
-					<a href="#" title="Сливочное с кусочками темного шоколада">Сливочное с кусочками темного шоколада</a>					
-				</div>
-				<div class="cream cream-12">
-					<div class="sticker"></div>
-					<img src="img/cream/cream-12.jpg" width="200" height="200" alt="мороженое крупным планом">
-					<p>420&#8381;<span>/кг</span></p>
-					<a href="#" title="Сливочное с мятным сиропом">Сливочное с мятным сиропом</a>					
-				</div>		
+				<div class="container-flex">
+					<div class="main-navigation-wrapper">
+						<div class="container-center">
+								<div class="cream cream-1">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-1.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>310&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+								</div>			
+								<div class="cream cream-2">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-2.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>380&#8381;<span>/кг</span></p>
+									<a title="Сливочно-кофейное с кусочками шоколада">Сливочно-кофейное с кусочками шоколада</a>
+								</div>
+								<div class="cream cream-3">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-3.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>355&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочно-клубничное с присыпкой из белого шоколада">Сливочно-клубничное с присыпкой из белого шоколада</a>
+								</div>
+								<div class="cream cream-4">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-4.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>415&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочное крем-брюле с карамельной подливкой">Сливочное крем-брюле с карамельной подливкой</a>
+								</div>
+								<div class="cream cream-5">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-5.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>325&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочное с брусничным джемом">Сливочное с брусничным джемом</a>
+								</div>
+								<div class="cream cream-6">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-6.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>410&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочно-черничное с цельными ягодами черники">Сливочно-черничное с цельными ягодами черники</a>					
+								</div>
+								<div class="cream cream-7">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-7.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>375&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочно-лимонное с карамельной присыпкой">Сливочно-лимонное с карамельной присыпкой</a>			
+								</div>
+								<div class="cream cream-8">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-8.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>320&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочное с шоколадной стружкой">Сливочное с шоколадной стружкой</a>					
+								</div>
+								<div class="cream cream-9">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-9.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>440&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочно-ванильное с кусочками шоколада">Сливочно-ванильное с кусочками шоколада</a>					
+								</div>
+								<div class="cream cream-10">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-10.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>435&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочное с ментоловым сиропом">Сливочное с ментоловым сиропом</a>					
+								</div>
+								<div class="cream cream-11">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-11.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>355&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочное с кусочками темного шоколада">Сливочное с кусочками темного шоколада</a>					
+								</div>
+								<div class="cream cream-12">
+									<div class="sticker"></div>
+									<img src="img/cream/cream-12.jpg" width="200" height="200" alt="мороженое крупным планом">
+									<p>420&#8381;<span>/кг</span></p>
+									<a href="#" title="Сливочное с мятным сиропом">Сливочное с мятным сиропом</a>					
+								</div>
+					  	</div>			
+						</div>
+					</div>				
 				<div class="number-page">
           <button class="page-button" type="button">Назад</button>
 					<ul class="page-list">
@@ -203,34 +226,40 @@
 			</section>	
 		</main>
 		<footer class="page-footer">
-			<div class="social">
-				<ul>
-					<li><a class="social-button Twitter" href="#" title="твиттер магазина"></a></li>
-					<li><a class="social-button Instagram" href="#" title="инстаграм магазина"></a></li>
-					<li><a class="social-button Facebook" href="#" title="Фейсбук магазина"></a></li>
-					<li><a class="social-button VKontakte" href="#" title="Вконтакте магазина"></a></li>
-				</ul>
-			</div>
-				<div class="table">
-					<table>
-						<tr>
-							<td><a href="#" title="Информация для поставщиков">&#10084;</a></td>
-							<td><a href="#" title="Информация для поставщиков"><b>Для поставщиков</b></a></td>
-							<td><a href="#" title="Список документов магазина">Наши документы</a></td>
-						</tr>
-						<tr>   
-							<td></td>   
-							<td><a href="#" title="Информация о производстве">О производстве</a></td>
-							<td><a href="#" title="Экологические стандарты">Экологические стандарты</a></td>
-						</tr>
-					</table>
+			<div class="container-flex">
+				<div class="main-navigation-wrapper">
+					<div class="container-center">
+						<div class="social">
+							<ul>
+								<li><a class="social-button Twitter" href="#" title="твиттер магазина"></a></li>
+								<li><a class="social-button Instagram" href="#" title="инстаграм магазина"></a></li>
+								<li><a class="social-button Facebook" href="#" title="Фейсбук магазина"></a></li>
+								<li><a class="social-button VKontakte" href="#" title="Вконтакте магазина"></a></li>
+							</ul>
+						</div>
+							<div class="table">
+								<table>
+									<tr>
+										<td><a href="#" title="Информация для поставщиков">&#10084;</a></td>
+										<td><a href="#" title="Информация для поставщиков"><b>Для поставщиков</b></a></td>
+										<td><a href="#" title="Список документов магазина">Наши документы</a></td>
+									</tr>
+									<tr>   
+										<td></td>   
+										<td><a href="#" title="Информация о производстве">О производстве</a></td>
+										<td><a href="#" title="Экологические стандарты">Экологические стандарты</a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="copyright">
+								<a class="logo-academy" href="https://htmlacademy.ru" target="blank" title="Переход на сайт HTML Academy">
+									<img src="img/logo-htmlacademy.png" width="108" height="39" alt="Логотип HTML Academy">
+								</a>
+								<p>Сделано в <a href="https://htmlacademy.ru" target="blank">HTML Academy</a>&copy; 2017</p>
+							</div>
+					</div>
 				</div>
-				<div class="copyright">
-          <a class="logo-academy" href="https://htmlacademy.ru" target="blank" title="Переход на сайт HTML Academy">
-            <img src="img/logo-htmlacademy.png" width="108" height="39" alt="Логотип HTML Academy">
-          </a>
-					<p>Сделано в <a href="https://htmlacademy.ru" target="blank">HTML Academy</a>&copy; 2017</p>
-				</div>
+			</div>							
 		</footer>
 	</body>
 </html>

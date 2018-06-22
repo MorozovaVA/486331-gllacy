@@ -36,7 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
+}
 .logo{
     width: 154px;
     height: 64px;
@@ -116,8 +116,11 @@ header ul{
  /* Стилизация main */
 .promo-text{    
     font-size: 60px;
-    line-height: 60px;
-   
+    line-height: 60px;   
+}
+.slide-2,
+.slide-3{
+    display: none;
 }
 
 .special-offer h2{
@@ -361,6 +364,13 @@ article{
     font-weight: 400;
 }
 /* стилизация каталога */
+.form-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0;
+    padding: 20px;
+}
 .check{
     text-decoration: none;
     background-color: #ec573b;
@@ -386,6 +396,8 @@ article{
 .active{
     text-decoration: none;
 }
+
+
 .navigation h1{
     font-size: 35px;
     line-height: 41px;
@@ -401,11 +413,24 @@ article{
     font-weight: 500;
 }
 .sort select{
+    min-width: 193px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
     background-color: #aabab0;
+}
+.range{
+    min-width: 218px;
+}
+.fat-content{
+    min-width: 414px;
+}
+.filler{
+    min-width: 600px;
+}
+.button-form{
+    min-width: 143px;
 }
 .page-list{
     list-style: none;
