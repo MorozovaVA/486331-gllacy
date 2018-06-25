@@ -21,29 +21,43 @@
               </div>
               <nav class="main-navigation">
                 <ul class="site-navigation">
-                  <li><a href="catalog.html" title="Переход на страницу каталога">Каталог</a></li>
+                  <li><a href="catalog.html" title="Переход на страницу каталога">Каталог</a>
+                    <ul class="sub-menu">
+                      <li><a href="#" title="Переход в раздел новинки">Новинки</a></li>
+                      <li><a href="catalog.html" title="Переход в раздел сливочного мороженого">Сливочное</a></li>
+                      <li><a href="#" title="Переход в раздел щербеты">Щербеты</a></li>
+                      <li><a href="#" title="Переход в раздел фрутовый лед">Фруктовый лед</a></li>
+                      <li><a href="#" title="Переход в раздел мелорин">Мелорин</a></li>
+                    </ul>  
+                  </li>
                   <li><a href="#" title="Информация о доставке и оплате" >Доставка и оплата</a></li>
                   <li><a href="#" title="Информация о компании">О компании</a></li>
                 </ul>
               </nav>
               <nav class="user-navigation">
-                <ul>
-                  <li>Поиск</li>
-                  <li class="login-link">
-                    <a class="login-link" href="login.html">Вход</a>
+                <ul class="user-navigation-list">
+                  <li>
+                    <a href="#" class="search-button" title="кнопка для вывода поля поиска"></a>
                   </li>
-                  <li>Корзина</li>
+                  <li class="login-link">
+                    <a class="login-link-button" href="login.html" title="кнопка для входа">Вход</a>
+                  </li>
+                  <li>
+                    <a href="#" class="basket" title="кнопка для просмотра корзины">Пусто</a>
+                  </li>
                 </ul>       
               </nav> 
-              <form class="search visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+              <form class="search-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
                 <input type="search" placeholder="Что ищем?">
               </form>
-              <form class="enter visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
-                <input type="email"  placeholder="Электронная почта">
-                <input type="password" placeholder="Пароль">
-                <button class="button" type="submit">Войти</button>
-                <a href="#" title="Востановить пароль">Забыли пароль?</a>
-                <a href="#" title="Зарегестрироваться">Новая регистрация</a>
+              <form class="enter-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+                <input type="email" class="email"  placeholder="Электронная почта">
+                <input type="password" class="password" placeholder="Пароль">
+                <div class="buttons-enter">
+                  <button class="button button-enter" type="submit">Войти</button>                    
+                  <a href="#" title="Востановить пароль">Забыли пароль?</a> 
+                  <a href="#" title="Зарегестрироваться">Новая регистрация</a>
+                </div>  
               </form>
               <div class="info">
                 <span class="work-time">С 10 до 20 ежедневно</span> 
@@ -55,31 +69,35 @@
       </header>
       <!-- Основная часть -->
       <main class="container">        
-        <section class="promo">
-         <div class="container-flex">
-            <div class="slide slide-1">                    
-              <span class="promo-text">Крем брюле и пломбир с малиновым джемом</span>
-              <button class="button order order-cream">Давайте оба!</button>          
+        <section class="promo"> 
+          <div class="container-flex">
+            <div class="main-navigation-wrapper">
+              <div class="container-center">       
+                <div class="slide slide-1">                    
+                  <span class="promo-text">Крем брюле и пломбир с малиновым джемом</span>
+                  <button class="button order order-cream">Давайте оба!</button>          
+                </div>
+                <div class="slide slide-2 visualy-hidden">            
+                  <span class="promo-text">Шоколадный пломбир и лимонный сорбет </span>
+                  <button class="button order order-cream">Давайте оба!</button>        
+                </div>
+                <div class="slide slide-3 visualy-hidden">            
+                  <span class="promo-text">Пломбир с помадкой и клубничный щербет</span>
+                  <button class="button order order-cream">Давайте оба!</button>                
+                </div>
+                <ul class="slides-switches">
+                  <li class="slide-radio">
+                    <button class="slide-btn" type="button">Первый слайд</button>
+                  </li>
+                  <li class="slide-radio">
+                    <button class="slide-btn" type="button">Второй слайд</button>
+                  </li>
+                  <li class="slide-radio">
+                    <button class="slide-btn" type="button">Третий слайд</button>
+                  </li>
+                </ul>
+              </div>          
             </div>
-            <div class="slide slide-2 visualy-hidden">            
-              <span class="promo-text">Шоколадный пломбир и лимонный сорбет </span>
-              <button class="button order order-cream">Давайте оба!</button>        
-            </div>
-            <div class="slide slide-3 visualy-hidden">            
-              <span class="promo-text">Пломбир с помадкой и клубничный щербет</span>
-              <button class="button order order-cream">Давайте оба!</button>                
-            </div>
-            <ul class="slides-switches">
-              <li class="slide-radio">
-                <button class="slide-btn" type="button">Первый слайд</button>
-              </li>
-              <li class="slide-radio">
-                <button class="slide-btn" type="button">Второй слайд</button>
-              </li>
-              <li class="slide-radio">
-                <button class="slide-btn" type="button">Третий слайд</button>
-              </li>
-            </ul>
           </div>
         </section>        
         <section class="special-offer">

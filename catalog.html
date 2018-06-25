@@ -23,29 +23,43 @@
 					</div>
 						<nav class="main-navigation">
 							<ul class="site-navigation">
-								<li class="check"><a href="#" title="Переход на страницу каталога">Каталог</a></li>
+								<li><a href="#"  class="check" title="Переход на страницу каталога">Каталог</a>
+									<ul class="sub-menu">
+										<li><a href="#" title="Переход в раздел новинки">Новинки</a></li>
+										<li><a href="catalog.html" class="check-point" title="Переход в раздел сливочного мороженого">Сливочное</a></li>
+										<li><a href="#" title="Переход в раздел щербеты">Щербеты</a></li>
+										<li><a href="#" title="Переход в раздел фрутовый лед">Фруктовый лед</a></li>
+										<li><a href="#" title="Переход в раздел мелорин">Мелорин</a></li>
+									</ul>  
+								</li>
 								<li><a href="#" title="Информация о доставке и оплате" >Доставка и оплата</a></li>
 								<li><a href="#" title="Информация о компании">О компании</a></li>
 							</ul>
 						</nav>
 						<nav class="user-navigation">
-							<ul>
-								<li>Поиск</li>
-								<li class="login-link">
-									<a class="login-link" href="login.html">Вход</a>
+							<ul class="user-navigation-list">
+								<li>
+									<a href="#"  class="search-button"  title="кнопка для вывода поля поиска"></a>									
 								</li>
-								<li>Корзина</li>
+								<li class="login-link">
+									<a class="login-link-button" href="login.html" title="кнопка для входа">Вход</a>
+								</li>
+								<li>
+									<a href="#"  class="goods" title="кнопка для просмотра корзины">2 товара</a>
+								</li>
 							</ul>       
-						</nav> 
-						<form class="search visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+						</nav>  
+						<form class="search-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
 							<input type="search" placeholder="Что ищем?">
 						</form>
-						<form class="enter visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+						<form class="enter-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
 							<input type="email" name="email" placeholder="Электронная почта">
 							<input type="password" name="password" placeholder="Пароль">
-							<button class="button" type="submit">Войти</button>
-							<a href="#" title="Востановить пароль">Забыли пароль?</a>
-							<a href="#" title="Зарегестрироваться">Новая регистрация</a>
+							<div class="buttons-enter">
+								<button class="button" type="submit">Войти</button>
+								<a href="#" title="Востановить пароль">Забыли пароль?</a>
+								<a href="#" title="Зарегестрироваться">Новая регистрация</a>
+							</div>	
 						</form>
 						<!-- <form class="basket visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
 							<button class="closed" type="button">Закрыть</button>
@@ -61,11 +75,17 @@
 		</header>
 		<main>
 			<header class="main-header">
-				<p class="navigation"> 
-					<a href="index.html" title="Возврат на главную страницу"><span>Главная</span></a>
-					&raquo; <span> Каталог</span>  &raquo; <span class="active">Сливочное</span>
-				</p>
-				<h1> Сливочное мороженое</h1>
+				<div class="container-flex">
+					<div class="main-navigation-wrapper">
+						<div class="container-center">
+							<p class="navigation"> 
+								<a href="index.html" title="Возврат на главную страницу"><span>Главная</span></a>
+								&raquo; <span> Каталог</span>  &raquo; <span class="active">Сливочное</span>
+							</p>
+							<h1> Сливочное мороженое</h1>
+						</div>
+					</div>
+				</div>					
 				<div class="container-form">				
 					<form class="sort" action="https://echo.htmlacademy.ru" method="post">
 						<div class="form-flex">
