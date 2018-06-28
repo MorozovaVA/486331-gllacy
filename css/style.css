@@ -8,16 +8,20 @@ body {
     font-weight: bold;
     color: #ffffff;
     background-color: #849d8f;
-    width: 900px;    
+     
 }
 .site-wrapper{
-    min-width: 940px;
-    max-width: 1240px;
+    width: 940px;        
+    margin: 0 auto;
     background-color: #849d8f;
     background-image: url("../img/background/slider-1.png");
     background-repeat: no-repeat;
     background-position: top center;
     transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+.catalog-wrapper{
+    width: 900px;
+    margin: 0 auto;
 }
 /* Стилизация header */
 
@@ -25,9 +29,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .main-navigation-wrapper{
-    min-width: 900px; 
+    min-width: 900px;    
     
 }
 .container-center{
@@ -95,7 +100,8 @@ header ul{
     background-color: #ffffff; 
     border-radius: 5px;
     display: none;   
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);    
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);  
+    z-index: 999;  
          
 }
 .sub-menu a{
@@ -671,11 +677,15 @@ article a{
 .subscription-mail button{  
     padding: 10px;        
 }
-.map{
-    margin-bottom: 20px;
+.location {
+    position: relative;
+    margin-bottom: 35px;
 }
 
 .block-address{  
+    position: absolute;
+    top: 65px;
+    right: 20px;
     background-color: #fdfdfd;  
     width: 240px;  
     color: #323232;
@@ -706,6 +716,7 @@ article a{
     text-decoration: none;
     color: #323232;
 }
+
 .location button{
     padding: 15px 30px;
 }
@@ -753,7 +764,10 @@ article a{
     background-size: cover;
     border: 2px solid #c2cec7;
     border-radius: 50%;
-    
+    opacity: 0.8;
+}
+.social-button:hover{
+    opacity: 1;
 }
 .twitter{
    background-image: url("../img/icon/tw-icon.png");
@@ -768,11 +782,13 @@ article a{
     background-image: url("../img/icon/vk-icon.png");
 }
 .table a{
+    padding-right: 20px;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
     color: #ffffff;
 }
+
 .table a:hover,
 .copyright a:hover {
     color: #ffbc9e;
@@ -785,12 +801,13 @@ article a{
 }
 
 .copyright p{
+    margin: 0;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
 }
 .copyright a{
-    padding: 0;
+    
     color: #ffffff;
     font-weight: 400;
 }
@@ -838,69 +855,198 @@ article a{
     text-decoration: none;
 }
 
-
 .navigation h1{
     font-size: 35px;
     line-height: 41px;
 }
-.sort legend{
+/* стилизация формы каталога */
+.container-form p{
+    position: relative;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 500;
+    font-weight: 400;
+    padding: 5px;
+    margin: 0;
 }
-.sort label{
+
+.scale {
+    width: 176px;
+    height: 4px;
+    margin: 16px 10px;  
+    background: #d7dcde;
+}
+.bar {
+    width: 70%;
+    height: 4px;
+  
+    background: #ffffff;
+}
+.form-scale{
+    position: relative;
+}
+.toggle {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    padding: 0;
+  
+    border: 10px solid #ffffff;
+    border-radius: 50px;
+    background-color: #ababab;
+    cursor: pointer;
+  }
+.toggle-min {
+    left: 23px;
+}
+  
+.toggle-max {
+    left: 120px;
+}
+.controls-item {    
+    display: block;
+}
+
+
+.form-sort-item label,
+.form-filter-item label{
+    display: inline-block;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 500;
+    font-weight: 400;    
+    position: relative;
+    padding-left: 40px;
+    color: #e6ebe9;
+    cursor: pointer;
 }
-.sort select{
-    min-width: 193px;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
+.form-sort-item label:hover,
+.form-filter-item label:hover{
     color: #ffffff;
-    background-color: #aabab0;
 }
-.range{
-    min-width: 218px;
+
+.form-sort-item{    
+    border: none;    
 }
-.fat-content{
-    min-width: 414px;
+
+.background-form{
+    background: #a9bab0;
+    border-radius: 20px;
+    padding: 5px;
 }
-.filler{
-    min-width: 600px;
+.form-sort-item label::before{
+    content: "";
+    position: absolute;
+    display: block; 
+    top: -2px;   
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    border: 4px solid #a9bab0;
+    border-radius: 50%;
+}
+
+.form-filter-item label::before{
+    content: "";
+    position: absolute;
+    display: block; 
+    top: -2px;   
+    left: 10px;    
+    width: 15px;
+    height: 15px;
+    border: 2px solid #a9bab0;
+    border-radius: 5px;
 }
 .button-form{
-    min-width: 143px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: 2px solid #ffffff;
+    background-color: #a9bab0;
+    border-radius: 20px;
 }
+.button-form:hover{
+    color: #323232;
+    background-color: #ffffff;
+}
+.button-form:active{    
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);    
+}
+
+/* стилизация формы каталога закончена */
 .number-page{
     display: flex;
     flex-wrap: wrap;    
 }
-
-.page-list li{
-    display: inline-block;
-    list-style: none;
-    border-radius: 50%;
-    padding: 20px;
-}
-.page-list a{
-    display: block;
-    font-size: 16px;
-    line-height: 18px;    
+.assortment-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
-.page-list li:hover{
-    background-color: #aabab0;
+.assortment-wrapper{
+    min-width: 900px;    
+    
 }
-.page-list li:active{
+.assortment-center{
+    min-width: 860px;    
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.assortment-wrapper .assortment-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.number-page{
+    display: flex;
+    justify-content: flex-end;    
+    min-width: 200px;
+    margin-bottom: 35px;
+    padding: 10px;
+    
+}
+.number-page a{
+    display: inline-block;
+    height: 40px;
+    min-width: 20px;
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+   
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50%;
+}
+.ago{
+    background-image: url("../img/icon/icon-right-small.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+.go{
+    background-image: url("../img/icon/icon-right-small.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: rotate(180deg);
+    opacity: 0.3;
+}
+
+
+.number-page .active{
     color: #323232;
     background-color: #ffffff;
 }
-.page-list .active{
+.number-page a:hover{
+    background-color: #9db1a5;
+}
+.number-page a:active{
     color: #323232;
     background-color: #ffffff;
 }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
