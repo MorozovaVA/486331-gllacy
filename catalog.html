@@ -40,28 +40,65 @@
 							<nav class="user-navigation">
 								<ul class="user-navigation-list">
 									<li>
-										<a href="#"  class="search-button"  title="кнопка для вывода поля поиска"></a>									
+										<a href="#"  class="search-button"  title="кнопка для вывода поля поиска"></a>	
+										<ul class="form-search">
+											<li>
+												<form class="search-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+													<input type="search" placeholder="Что ищем?">
+												</form>
+											</li>	
+										</ul>								
 									</li>
 									<li class="login-link">
 										<a class="login-link-button" href="login.html" title="кнопка для входа">Вход</a>
+										<ul class="form-enter">
+											<li>
+												<form class="enter-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+													<input type="email" class="email"  placeholder="Электронная почта">
+													<input type="password" class="password" placeholder="Пароль">
+													<div class="buttons-enter">
+                              <button class="button button-enter" type="submit">Войти</button>   
+                              <div class="button-item">                 
+																<a href="#" title="Востановить пароль">Забыли пароль?</a> 
+																<a href="#" title="Зарегестрироваться">Новая регистрация</a>
+                              </div>
+                            </div>  
+												</form>
+											</li>
+											</ul>
 									</li>
-									<li>
+									<li>										
 										<a href="#"  class="goods" title="кнопка для просмотра корзины">2 товара</a>
+										<ul class="basket-item">
+											<li>
+												<table>
+												<tr>
+													<td class="button-delete"></td>
+													<td><img src="img/cream/cream-1.jpg" width="33" height="33" alt="иконка выбранного мороженого"></td>
+													<td>Пломбир с апельсиновым джемом</td>
+													<td>1,5 кг х <span>200 руб.</span></td>
+													<td>300 руб.</td>
+												</tr>
+												<tr>
+													<td class="button-delete"></td>
+													<td><img src="img/cream/cream-3.jpg" width="33" height="33" alt="иконка выбранного мороженого"></td>
+													<td>Клубничный пломбир с присыпкой <br>
+													 из белого шоколада</td>
+													<td>1,5 кг х <span>300 руб.</span></td>
+													<td>400 руб.</td>
+												</tr>
+											</table>
+											<div class="basket-price">
+												<p>Итого: 750 руб.</p>
+												<button class="button place-your-order" type="button">Оформить заказ</button>
+											</div>
+											</li>
+										</ul> 
+									
 									</li>
 								</ul>       
-							</nav>  
-							<form class="search-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
-								<input type="search" placeholder="Что ищем?">
-							</form>
-							<form class="enter-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
-								<input type="email" name="email" placeholder="Электронная почта">
-								<input type="password" name="password" placeholder="Пароль">
-								<div class="buttons-enter">
-									<button class="button" type="submit">Войти</button>
-									<a href="#" title="Востановить пароль">Забыли пароль?</a>
-									<a href="#" title="Зарегестрироваться">Новая регистрация</a>
-								</div>	
-							</form>
+							</nav> 					
+							
 							<!-- <form class="basket visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
 								<button class="closed" type="button">Закрыть</button>
 								<button class="closed" type="button">Закрыть</button>

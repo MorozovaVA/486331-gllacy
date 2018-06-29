@@ -117,7 +117,7 @@ header ul{
 }
 
 .sub-menu li:first-child{    
-    border-bottom: 2px solid #d1d0ce;
+    border-bottom: 2px solid #d1d0ce;   
 }
 
 .sub-menu a:hover{
@@ -167,6 +167,7 @@ header ul{
     background-color: #ffffff;
     background-image: url("../img/icon/search-hover.png");
 }
+
 .login-link-button{
     position: relative;
     min-width: 42px;
@@ -194,7 +195,8 @@ header ul{
     color: #323232;
     background-color: #ffffff;
 }
-.basket, .goods{
+.basket, 
+.goods {
     position: relative;
     min-width: 50px;
     padding-top: 10px;
@@ -214,9 +216,10 @@ header ul{
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-.goods {
+.user-navigation-list .goods {
     background-color: #ffffff;
     color: #323232;
+    font-weight: 700;
 }
 .goods::before{
     content: "";
@@ -248,31 +251,32 @@ header ul{
     font-size: 22px;
     line-height: 24px;
 }
-.search-form {    
+.form-search{ 
+    position: absolute;   
     top: 60px;
-    left: 320px;
+    right: 250px;
     min-width: 110px;
     padding: 20px 15px;    
     display: none;
 }
 
-.search-form input{
-    padding-top: 15px;
-    padding-bottom: 15px;
+.form-search input{
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 110px;
     
 }
 
-.enter-form,
-.search-form{
+.form-enter,
+.form-search{
     position: absolute;
     background-color: #f8f7f4; 
     border-radius: 5px;       
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);   
 }
-.enter-form input,
-.search-form input{
+.form-enter input,
+.form-search input{
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; 
@@ -280,26 +284,36 @@ header ul{
     border: 1px solid #d3d3d2;
     border-radius: 5px;
 }
-
-.enter-form {  
+.user-navigation-list > li:hover .form-search{
+    display: block;
+}
+.form-enter {  
     display: flex;
     flex-direction: column;
-    display: none;
+    position: absolute;
+    top: 60px;
+    right: 130px;
+    z-index: 999;
+    display:none;
 }
-.enter-form input{
+.form-enter input{
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 10px;
-    padding-right: 175px;
-    
+    padding-right: 60px;
+    margin: 20px;    
 }
-.enter-form a{
+.form-enter input:first-child{
+    margin-bottom: 0;
+}
+.form-enter a{
     font-size: 13px;
     font-weight: 400;
     line-height: 16px;   
     color: #323232;
     text-decoration: underline;
 }
+
 .enter a:hover{
     color: #e84d37;
     text-decoration: none;
@@ -308,11 +322,89 @@ header ul{
     color: #e84d37;
     text-decoration: underline;
 }
-.button-enter{
-    min-width: 100px;
-    min-height: 44px;
+.buttons-enter{
+    position: relative;
 }
-
+.button-item{
+    position: absolute;
+    top: -10px;
+    left: 110px;
+    padding: 0;
+    margin-left: 10px;
+}
+.button-item a{
+    padding: 10px;
+    margin: 0;
+}
+.button-item a:first-child{
+    padding-bottom: 0;
+}
+.button-enter{
+  
+   font-weight: 700;
+   padding: 15px 25px;
+   margin-top: 0;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+.user-navigation-list > li:hover .form-enter{
+    display: block;
+}
+.basket-item{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    width: 510px;  
+    padding: 20px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+    background-color: #f8f7f4;
+    border-radius: 10px;
+    z-index: 999;
+    display: none;
+}
+.basket-item table{
+    border-collapse: collapse;
+    border-bottom: 2px solid #ccccc9;
+}
+.button-delete{
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-image: url("../img/icon/delete.png");
+    background-repeat: no-repeat;
+    background-size: content;
+    background-position: center center;
+}
+.basket-item td{
+    padding: 10px;
+}
+.basket-item img{
+    border-radius: 50%;
+}
+.basket-item span{
+    color: #b2b2b1;
+}
+.basket-item button{
+    font-weight: 700;
+    padding: 10px 15px;
+}
+.basket-item p{
+    font-weight: 700;
+}
+.basket-price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.user-navigation-list > li:hover .basket-item{
+    display: block;
+}
  /* Стилизация main */
 .container-promo{
     width: 900px;
@@ -499,6 +591,23 @@ header ul{
 .button:active {
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+.cream-container{
+    position: relative;
+    min-width: 200px;
+    min-height: 360px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #a5b7ad;
+    border-radius: 10px;
+    
+}
+.cream-container .cream-button{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    padding: 10px 15px;
+    
 }
 .cream img{
     border-radius: 50%;
