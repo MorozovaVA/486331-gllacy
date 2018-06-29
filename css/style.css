@@ -592,8 +592,8 @@ header ul{
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
-.cream-container{
-    position: relative;
+/* .cream:hover{
+
     min-width: 200px;
     min-height: 360px;
     padding-left: 10px;
@@ -602,13 +602,14 @@ header ul{
     border-radius: 10px;
     
 }
-.cream-container .cream-button{
+ .cream-button{
     position: absolute;
     bottom: 10px;
     left: 20px;
     padding: 10px 15px;
+    display: none;
     
-}
+} */
 .cream img{
     border-radius: 50%;
 }
@@ -689,18 +690,30 @@ header ul{
     line-height: 22px; 
     font-weight: 400px; 
 }
-/* .our-cream p::before{
+.icon::before{
     content: "";
+    display: block;
     position: absolute;
-    min-width: 50px;
-    min-height: 50px;
-    background-image: url("..img/icon/enter.png");
+    top: -5px;
+    left: 10px;
+    width: 50px;
+    height: 50px;   
     background-repeat: no-repeat;
-    background-size: contain;
-    
-    border-radius: 50%;
-    border: 1px solid black;
-} */
+    background-size: contain;    
+    border-radius: 50%;      
+}
+.icon-cow::before{
+    background-image: url("../img/icon/cow.png");
+}
+.icon-cream::before{
+    background-image: url("../img/icon/cream-icon.png");
+}
+.icon-foliage::before{
+    background-image: url("../img/icon/foliage.png");
+}
+.icon-thermometer::before{
+    background-image: url("../img/icon/thermometer.png");
+}
 
 .container-blog{
     display: flex;
@@ -829,29 +842,83 @@ article a{
 .location button{
     padding: 15px 30px;
 }
-.feedback-form{
-    width: 477px;
-    min-height: 422px;
-    background-color: #f8f7f4;  
-    display: none;  
+.modal{
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-left: -200px;
+    display: none;
 }
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    
+    font-size: 0; 
+    background-color: #f8f7f4;
+    border: 0;
+  
+    cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    top: 15px;
+    left: 20px;
+    position: absolute;
+        
+    width: 20px;
+    height: 3px;
+
+    background-color: #323232;
+}
+.modal-close::before {
+    transform: rotate(45deg);
+}
+  
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+  
+
+.feedback-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 25px;
+    width: 420px;
+    background-color: #f8f7f4;  
+    border-radius: 10px;    
+}
+
 .feedback-form legend{
     font-size: 24px;
     line-height: 28px; 
     font-weight: 500;
     color: #323232;
+    margin-bottom: 20px;
 }
-.feedback-form input{
+.feedback-form input,
+.feedback-form textarea {
+    min-width: 235px;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;   
     color: #999999;
+    border: 1px solid rgb(211, 211, 210);
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;    
 }
 .feedback-form textarea{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;   
-    color: #999999;
+    min-width: 390px;
+    min-height: 65px;
+}
+.feedback-form button{
+    align-self: flex-end;
+    padding: 10px 20px;
 }
 /* Стилизация footer */
 .social{

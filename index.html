@@ -147,7 +147,7 @@
                   <p>310 &#8381;<span>/кг</span></p>
                   <a href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </div>
-                <button class="button cream-button" type="button">Быстрый просмотр</button>
+                <button class="button cream-button visually-hidden" type="button">Быстрый просмотр</button>
               </div>
               <div class="cream cream-2">
                 <div class="sticker"></div>
@@ -175,25 +175,21 @@
         <div class="container-about-us">
           <h1>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
           <div class="container-column">
-          <div class="our-cream">
-            <span class="icon icon-cream"></span>
-            <p>Все наше мороженое изготовлено на собственном производстве, с использованием современного оборудования 
+          <div class="our-cream">            
+            <p class="icon icon-cream">Все наше мороженое изготовлено на собственном производстве, с использованием современного оборудования 
               и проверенных временем технологий.</p>
           </div>
-          <div class="ingredients">
-              <span class="icon icon-cow"></span>
-              <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний,
-                с которыми нас связывает долговременное сотрудничество.</p>
+          <div class="ingredients">             
+            <p class="icon icon-cow">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний,
+              с которыми нас связывает долговременное сотрудничество.</p>
           </div>
-          <div class="composition">
-              <span class="icon icon-foliage"></span>
-              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
-                Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          <div class="composition">              
+            <p class="icon icon-foliage">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
+              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </div>         
-          <div class="delivery">
-              <span class="icon icon-thermometer"></span>
-              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-                который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          <div class="delivery">              
+            <p class="icon icon-thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+              который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </div>  
           </div>
         </div>  
@@ -240,11 +236,14 @@
             <button class="button feedback-button" type="button">Форма обратной связи</button> 
           </div>         
         </div>
-        <form class="feedback-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+      </section>
+      <section class="modal modal-login">       
+        <form class="feedback-form " action="https://echo.htmlacademy.ru" method="post">
+          <button class="modal-close" type="button">Закрыть</button>
           <legend>Мы обязательно вам ответим!</legend>
           <input type="text" name="name" placeholder="Как вас зовут?">
           <input type="email" name="email" placeholder="Ваша почта для ответа?">
-          <textarea rows="8" cols="43">Напишите что-нибудь..</textarea>
+          <textarea rows="4" cols="43">Напишите что-нибудь..</textarea>
           <button class="button" type="submit">Отправить</button>
         </form>
       </section>
