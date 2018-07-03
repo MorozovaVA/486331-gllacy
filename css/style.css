@@ -1027,10 +1027,11 @@ article a{
 /* стилизация каталога */
 .navigation-flex{
     display: flex;
-    width: 900px;
+    width: 1200px;
+    margin-bottom: 30px;
 }
 .navigation-center{
-    width: 860px;
+    width: 1140px;
     flex-direction: column;
     margin: 0 auto;
 }
@@ -1068,13 +1069,20 @@ article a{
 /* стилизация формы каталога */
 .container-form{
     display: flex;
-    width: 900px;
+    width: 1200px;
+    margin-bottom: 35px;
+}
+.form-wrapper{
+    width: 1140px;
+    margin: 0 auto;
 }
 .form-sort,
 .form-filter{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 900px;
+    
 }
 .form-sort-item,
 .form-filter-item{
@@ -1290,8 +1298,13 @@ article a{
 .assortment-flex{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;    
+}
+.assortment-flex-index{
+    margin-bottom: 35px;
+}
+.assortment-flex-catalog {
+    margin-bottom: 75px;
 }
 .assortment-wrapper{
     width: 1200px;    
@@ -1311,9 +1324,9 @@ article a{
     display: flex;
     justify-content: flex-end;    
     min-width: 200px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     padding: 10px;
-    
+       
 }
 .number-page a{
     display: inline-block;
@@ -1341,7 +1354,10 @@ article a{
     transform: rotate(180deg);
     opacity: 0.3;
 }
-
+.wrapper-footer-catalog{
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+}
 
 .number-page .active{
     color: #323232;
