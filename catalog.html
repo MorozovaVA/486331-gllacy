@@ -97,13 +97,9 @@
 									
 									</li>
 								</ul>       
-							</nav> 					
+							</nav> 		
 							
-							<!-- <form class="basket visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
-								<button class="closed" type="button">Закрыть</button>
-								<button class="closed" type="button">Закрыть</button>
-								<button class="button" type="submit">Заказать</button>
-							</form> -->
+						
 						<div class="info">
 							<span class="work-time">С 10 до 20 ежедневно</span> 
 							<span class="phone-number"><a href="tel:88124502525" title="телефон для связи">8 812 450-25-25</a></span>
@@ -128,13 +124,23 @@
 							<div class="form-sort">
 								<div class="form-sort-item">		
 									<p>Сортировка:</p>
-									<div class="background-form">										
-										<select name="sort" class="visually-hidden">
+									<div class="background-form select-sort">			
+										<ul class="select">
+											<li> По популярности
+												<ul class="sub-select">
+													<li>По популярности</li>
+													<li>Сначала недорогие</li>
+													<li>Сначала дорогие</li>
+													<li>По жирности</li>
+												</ul>
+											</li>
+										</ul>							
+										<!-- <select name="sort" class="visually-hidden">
 											<option value="fame">По популярности</option>
 											<option value="not expensive">Сначала недорогие</option>
 											<option value="expensive">Дорогие</option>
 											<option value="fat">По жирности</option>
-										</select>
+										</select> -->
 									</div>	
 								</div>
 								<div class="form-sort-item controls">															
@@ -150,21 +156,25 @@
 								<div class="form-sort-item">
 									<div class="fat-content">
 										<p>Жирность:</p>
-										<div class="background-form">
+										<div class="background-form form-fat-content">
 											<label>
-												<input class="visually-hidden" type="radio" name="fat-content" value="0">
+												<input class="visually-hidden radio-button" type="radio" name="fat-content" value="0">
+												<span class="radio-custom"></span>
 												0%
 											</label>
 											<label>
-												<input class="visually-hidden" type="radio" name="fat-content" value="10">
+												<input class="visually-hidden radio-button" type="radio" name="fat-content" value="10" checked>
+												<span class="radio-custom"></span>
 												10%
 											</label>
 											<label>
-												<input class="visually-hidden" type="radio" name="fat-content" value="-30">
+												<input class="visually-hidden radio-button" type="radio" name="fat-content" value="-30">
+												<span class="radio-custom"></span>
 												До 30%
 											</label>
 											<label>
-												<input  class="visually-hidden" type="radio" name="fat-content" value="+30">
+												<input  class="visually-hidden radio-button" type="radio" name="fat-content" value="+30">
+												<span class="radio-custom"></span>
 												Выше 30%
 											</label>
 										</div>	
@@ -175,25 +185,30 @@
 								<div class="form-filter-item">
 									<div class="filter">
 										<p>Наполнители:</p>
-										<div class="background-form">
+										<div class="background-form form-filter-checkbox">
 											<label>
-												<input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate">
+												<input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" checked>
+												<span class="input-custom"></span>
 												шоколадные
 											</label>
 											<label>
-												<input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar">
+												<input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" checked>
+												<span class="input-custom"></span>
 												сахарные присыпки
 											</label>
 											<label>
 												<input class="visually-hidden filter-input-checkbox" type="checkbox" name="fruits">
+												<span class="input-custom"></span>
 												фрукты
 											</label>
 											<label>
 												<input class="visually-hidden filter-input-checkbox" type="checkbox" name="syrup">
+												<span class="input-custom"></span>
 												сиропы
 											</label>
 											<label>
 												<input class="visually-hidden filter-input-checkbox" type="checkbox" name="jam">
+												<span class="input-custom"></span>
 												джемы
 											</label>
 										</div>	
@@ -210,77 +225,149 @@
 					<div class="assortment-flex">
 						<div class="assortment-wrapper">
 							<div class="assortment-center">
-									<div class="cream cream-1">
-										
-										<img src="img/cream/cream-1.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>310&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-									</div>			
-									<div class="cream cream-2">
-										
-										<img src="img/cream/cream-2.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>380&#8381;<span>/кг</span></p>
-										<a title="Сливочно-кофейное с кусочками шоколада">Сливочно-кофейное с кусочками шоколада</a>
+									<div class="cream-container">
+										<div class="cream-container-inner">
+											<div class="cream cream-1">										
+												<img src="img/cream/cream-1.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>310&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+											</div>	
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-3">
-										
-										<img src="img/cream/cream-3.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>355&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочно-клубничное с присыпкой из белого шоколада">Сливочно-клубничное с присыпкой из белого шоколада</a>
+									<div class="cream-container">
+										<div class="cream-container-inner">		
+											<div class="cream cream-2">										
+												<img src="img/cream/cream-2.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>380&#8381;<span>/кг</span></p>
+												<a title="Сливочно-кофейное с кусочками шоколада">Сливочно-кофейное с кусочками шоколада</a>
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-4">
-										
-										<img src="img/cream/cream-4.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>415&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочное крем-брюле с карамельной подливкой">Сливочное крем-брюле с карамельной подливкой</a>
+									<div class="cream-container">
+										<div class="cream-container-inner">		
+											<div class="cream cream-3">										
+												<img src="img/cream/cream-3.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>355&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочно-клубничное с присыпкой из белого шоколада">Сливочно-клубничное с присыпкой из белого шоколада</a>
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-5">
-										
-										<img src="img/cream/cream-5.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>325&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочное с брусничным джемом">Сливочное с брусничным джемом</a>
+									<div class="cream-container">
+										<div class="cream-container-inner">
+											<div class="cream cream-4">										
+												<img src="img/cream/cream-4.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>415&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочное крем-брюле с карамельной подливкой">Сливочное крем-брюле с карамельной подливкой</a>
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-6">
-										
-										<img src="img/cream/cream-6.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>410&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочно-черничное с цельными ягодами черники">Сливочно-черничное с цельными ягодами черники</a>					
+									<div class="cream-container">
+										<div class="cream-container-inner">
+											<div class="cream cream-5">										
+												<img src="img/cream/cream-5.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>325&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочное с брусничным джемом">Сливочное с брусничным джемом</a>
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-7">
-										
-										<img src="img/cream/cream-7.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>375&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочно-лимонное с карамельной присыпкой">Сливочно-лимонное с карамельной присыпкой</a>			
+									<div class="cream-container">
+										<div class="cream-container-inner">
+											<div class="cream cream-6">										
+												<img src="img/cream/cream-6.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>410&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочно-черничное с цельными ягодами черники">Сливочно-черничное с цельными ягодами черники</a>					
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-8">
-										
-										<img src="img/cream/cream-8.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>320&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочное с шоколадной стружкой">Сливочное с шоколадной стружкой</a>					
+									<div class="cream-container">
+										<div class="cream-container-inner">		
+											<div class="cream cream-7">										
+												<img src="img/cream/cream-7.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>375&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочно-лимонное с карамельной присыпкой">Сливочно-лимонное с карамельной присыпкой</a>			
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-9">
-										
-										<img src="img/cream/cream-9.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>440&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочно-ванильное с кусочками шоколада">Сливочно-ванильное с кусочками шоколада</a>					
+									<div class="cream-container">
+										<div class="cream-container-inner">		
+											<div class="cream cream-8">										
+												<img src="img/cream/cream-8.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>320&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочное с шоколадной стружкой">Сливочное с шоколадной стружкой</a>					
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-10">
-										
-										<img src="img/cream/cream-10.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>435&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочное с ментоловым сиропом">Сливочное с ментоловым сиропом</a>					
+									<div class="cream-container">
+										<div class="cream-container-inner">
+											<div class="cream cream-9">										
+												<img src="img/cream/cream-9.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>440&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочно-ванильное с кусочками шоколада">Сливочно-ванильное с кусочками шоколада</a>					
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-11">
-										
-										<img src="img/cream/cream-11.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>355&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочное с кусочками темного шоколада">Сливочное с кусочками темного шоколада</a>					
+									<div class="cream-container">
+										<div class="cream-container-inner">
+											<div class="cream cream-10">										
+												<img src="img/cream/cream-10.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>435&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочное с ментоловым сиропом">Сливочное с ментоловым сиропом</a>					
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
-									<div class="cream cream-12">
-										
-										<img src="img/cream/cream-12.jpg" width="200" height="200" alt="мороженое крупным планом">
-										<p>420&#8381;<span>/кг</span></p>
-										<a href="#" title="Сливочное с мятным сиропом">Сливочное с мятным сиропом</a>					
+									<div class="cream-container">
+										<div class="cream-container-inner">
+											<div class="cream cream-11">										
+												<img src="img/cream/cream-11.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>355&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочное с кусочками темного шоколада">Сливочное с кусочками темного шоколада</a>					
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
+									</div>
+									<div class="cream-container">
+										<div class="cream-container-inner">
+											<div class="cream cream-12">										
+												<img src="img/cream/cream-12.jpg" width="260" height="260" alt="мороженое крупным планом">
+												<p>420&#8381;<span>/кг</span></p>
+												<a href="#" title="Сливочное с мятным сиропом">Сливочное с мятным сиропом</a>					
+											</div>
+										</div>
+										<div class="cream-container-overlay">
+											<button class="button cream-button" type="button">Быстрый просмотр</button>
+										</div>
 									</div>
 								</div>			
 							</div>
