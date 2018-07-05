@@ -26,7 +26,7 @@
                 <ul class="site-navigation">
                   <li><a href="catalog.html" title="Переход на страницу каталога">Каталог</a>
                     <ul class="sub-menu">
-                      <li><a href="#" title="Переход в раздел новинки">Новинки</a></li>
+                      <li><a  href="#" title="Переход в раздел новинки">Новинки</a></li>
                       <li><a href="catalog.html" title="Переход в раздел сливочного мороженого">Сливочное</a></li>
                       <li><a href="#" title="Переход в раздел щербеты">Щербеты</a></li>
                       <li><a href="#" title="Переход в раздел фрутовый лед">Фруктовый лед</a></li>
@@ -247,7 +247,7 @@
 
       <section class="map">
         <div class="location">
-          <img src="img/background/map2.jpg" width="1200" height="430" alt="Карта магазина с адресом ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <img src="img/background/map2.jpg" width="100%" height="430" alt="Карта магазина с адресом ул. Большая Конюшенная 19/8, Санкт-Петербург">
           <div class="block-address">
             <p class="address">Адрес главного офиса <br>
               и офлайн-магазина: <br>
@@ -266,12 +266,13 @@
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <button class="modal-close" type="button">Закрыть</button>
           <legend>Мы обязательно вам ответим!</legend>
-          <input type="text" name="name" placeholder="Как вас зовут?">
+          <input type="text" name="login" placeholder="Как вас зовут?">
           <input type="email" name="email" placeholder="Ваша почта для ответа?">
           <textarea rows="4" cols="43">Напишите что-нибудь..</textarea>
-          <button class="button" type="submit">Отправить</button>
-        </form>
+          <button class="button" type="submit">Отправить</button>          
+        </form>        
       </section>
+      <div class="modal-overlay"></div>
     </main>
     <footer class="page-footer">
       <div class="container-flex">
@@ -325,5 +326,6 @@
         </div>      
       </footer>
     </div>  
+    <script src="js/scripts.js"></script>   
   </body>
 </html>
