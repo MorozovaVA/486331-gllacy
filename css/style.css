@@ -604,23 +604,43 @@ header ul {
 }
 
 .cream-container  {
-    position: relative;
-    
-}
-.cream-container-inner  {
-    position: relative;
-    z-index: 9;
-    padding: 10px;
-    box-sizing: border-box;
+    position: relative; 
+    min-height: 380px; 
 }
 
+.cream-img,
+.cream-prop {
+    position: relative;
+
+    box-sizing: border-box;  
+}
+.cream-img {
+    padding: 10px 10px 0 10px;     
+}
+.cream-prop {
+    padding: 0 10px 10px 10px;  
+}
+.cream-img img {
+    border-radius: 50%;
+}
+.cream-img p {
+    position: absolute;
+    bottom: -4px;
+    left: 10px;
+    font-size: 45px;
+    line-height: 45px;
+    z-index: 997;
+}
+.cream-prop {
+    z-index: 999;  
+}
 .cream-container-overlay  {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0; 
-    z-index: 8;
+    z-index: 998;
     background-color: rgba(255,255,255, 0);
     border-radius: 10px;
     
@@ -632,10 +652,13 @@ header ul {
 .cream-container:hover .cream-container-overlay {
     min-height: 410px;
     border-radius: 10px;
-    background-color: rgba(255,255,255, 0.4);
-    z-index: 999;
-   
+    background-color: rgba(255,255,255, 0.4); 
 }
+.cream-container  {
+    position: relative;
+    
+}
+
 .cream-button {
     position: absolute;
     bottom: 20px;
@@ -648,14 +671,16 @@ header ul {
 .cream-container:hover .cream-button  {
     visibility: visible;
     opacity: 1;     
+    text-align: center;
 }
 .cream img {
     border-radius: 50%;   
 }
 .cream {
     position: relative;
-    width: 260px; 
-    text-align: center; 
+    width: 260px;
+    padding: 10px;
+    text-align: center;    
     margin-bottom: 20px;  
     z-index: 999;   
 }
@@ -679,12 +704,11 @@ header ul {
     background-repeat: no-repeat; 
     background-size: contain;
 }
-.cream a {
+.cream-container a {
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;    
-    color: #ffffff;
-    z-index: 2000;
+    color: #ffffff;   
     
 }
 .cream a:hover {
@@ -974,6 +998,11 @@ article a {
 .feedback-form button {
     align-self: flex-end;
     padding: 10px 20px;
+}
+.feedback-form p{
+    font-size: 24px;
+    line-height: 28px;
+    color: #323232;
 }
 @keyframes bounce {
     0% {

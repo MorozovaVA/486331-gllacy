@@ -1,13 +1,10 @@
-var link = document.querySelector(".feedback-button");
-  
+var link = document.querySelector(".feedback-button");  
 var popup = document.querySelector(".modal-login");
 var close = popup.querySelector(".modal-close");
 var open = document.querySelector(".modal-overlay");
-
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]");
 var password = popup.querySelector("[name=password]");
-
 var isStorageSupport = true;
 var storage = "";
 try {
