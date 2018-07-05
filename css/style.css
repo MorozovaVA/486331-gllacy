@@ -732,16 +732,17 @@ header ul {
 }
 
 .container-about-us {
+    width: 1100px;  
+    padding: 30px 20px;    
     margin:0 auto;
+    margin-bottom: 40px;
     color: #323232;
     background-color: #f0e7d3;
     background-image: url("../img/background/about-us-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    width: 1100px;  
-    padding: 30px 20px;
-    margin-bottom: 40px;
+   
 }
 .container-about-us h1 {       
     font-size: 24px;
@@ -1060,7 +1061,6 @@ article a {
 .vkontakte {
     background-image: url("../img/icon/vk-icon.png");
 }
-
 .table a {
     padding-right: 20px;
     font-size: 13px;
