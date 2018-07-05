@@ -845,21 +845,22 @@ article a {
     padding: 20px 20px;    
 }
 .subscription-mail p {
+    min-width: 360px;
+    margin-bottom: 15px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     color: #5a5a5a; 
-    min-width: 360px;
-    margin-bottom: 15px;
+    
 }
 
 .subscription-mail input {
+    padding: 10px 15px;
+    width: 365px;
     border: 1px solid #999999;
     border-radius: 5px;
     color: #999999;
-    box-sizing: border-box;
-    padding: 10px 15px;
-    width: 365px;
+    box-sizing: border-box;  
    
 }
 .subscription-mail button {  
@@ -874,11 +875,12 @@ article a {
     position: absolute;
     top: 65px;
     right: 20px;
+    padding: 25px;
     background-color: #fdfdfd;  
     width: 240px;  
     color: #323232;
     border-radius: 15px;      
-    padding: 25px;
+    
 }
 .block-address p {
     margin-bottom: 20px;
