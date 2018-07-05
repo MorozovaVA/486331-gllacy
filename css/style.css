@@ -1060,6 +1060,7 @@ article a {
 .vkontakte {
     background-image: url("../img/icon/vk-icon.png");
 }
+
 .table a {
     padding-right: 20px;
     font-size: 13px;
@@ -1085,8 +1086,7 @@ article a {
     line-height: 18px;
     font-weight: 400;
 }
-.copyright a {
-    
+.copyright a {    
     color: #ffffff;
     font-weight: 400;
 }
