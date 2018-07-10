@@ -8,7 +8,7 @@
       <title>HTML Academy: Глейси</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet"> 
-      <link href="css/style.css" rel="stylesheet">      
+      <link href="css/style.min.css" rel="stylesheet">      
   </head>
   <body>
     <input class="visually-hidden product-1" type="radio" name="toggle" id="product1" checked>
@@ -45,8 +45,12 @@
                       </li>
                     </ul>  
                   </li>
-                  <li><a class="site-navigation-item" href="#" title="Информация о доставке и оплате" tabindex="2" >Доставка и оплата</a></li>
-                  <li><a class="site-navigation-item" href="#" title="Информация о компании" tabindex="3">О компании</a></li>
+                  <li>
+                    <a class="site-navigation-item" href="#" title="Информация о доставке и оплате" tabindex="2">Доставка и оплата</a>
+                  </li>
+                  <li>
+                    <a class="site-navigation-item" href="#" title="Информация о компании" tabindex="3">О компании</a>
+                  </li>
                 </ul>
               </nav>
               <nav class="user-navigation">
@@ -81,7 +85,7 @@
                   </li>
                   <li>
                     <a href="#" class="basket" title="кнопка для просмотра корзины" tabindex="6">Пусто</a>
-                  </li>
+                  </li>                                    
                 </ul>       
               </nav>           
               <div class="info">
@@ -122,22 +126,26 @@
           </section>      
         </div>       
         <section class="special-offer">
-          <div class="container-flex">
-            <div class="main-navigation-wrapper">
-              <div class="container-center">
-                <div class="special-offer-raspberry">
-                  <h2>Малинка даром!</h2>
-                  <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                  <div class="button-raspberry-container">
-                     <button class="button button-raspberry">Хочу варенье</button>
-                  </div>   
+          <div class="special-offer-flex">
+            <div class="special-offer-wrapper">
+              <div class="special-offer-center">
+                <div class="special-offer-container">
+                  <div class="special-offer-raspberry">
+                    <h2>Малинка даром!</h2>
+                    <p class="special-offer-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                    <div class="button-raspberry-container">
+                      <button class="button button-raspberry">Хочу варенье</button>
+                    </div>   
+                  </div>
                 </div>
-                <div class=" special-offer-chocolate">
-                  <h2>Шоколадки даром!</h2>
-                  <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
-                  <div class="button-chocolate-container"> 
-                   <button class="button button-chocolate ">Хочу шоколадки!</button>
-                  </div>                 
+                <div class="special-offer-container">
+                  <div class="special-offer-chocolate">
+                    <h2>Шоколадки даром!</h2>
+                    <p class="special-offer-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
+                    <div class="button-chocolate-container"> 
+                    <button class="button button-chocolate ">Хочу шоколадки!</button>
+                    </div>                                   
+                  </div>
                 </div>
               </div>
             </div>  
@@ -273,7 +281,7 @@
           <p>Мы обязательно вам ответим!</p>
           <input type="text" name="login" placeholder="Как вас зовут?">
           <input type="email" name="email" placeholder="Ваша почта для ответа?">
-          <textarea rows="4" cols="43">Напишите что-нибудь..</textarea>
+          <textarea rows="4" cols="43" placeholder="Напишите что-нибудь.."></textarea>
           <button class="button" type="submit">Отправить</button>          
         </form>        
       </section>

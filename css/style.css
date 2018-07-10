@@ -34,6 +34,7 @@ body {
     
 }
 .main-navigation-wrapper {
+    position: relative;
     width: 1200px;    
     
 }
@@ -63,11 +64,18 @@ header ul {
     padding: 0;
     list-style: none;
 }
-.site-navigation { 
-    position: relative; 
+.main-navigation{
+    position: absolute;
     display: flex;
-    flex-wrap: wrap;  
-    margin-right: 250px;   
+    flex-wrap: wrap;
+    width: 620px;    
+    top: 0;
+    left: 200px;    
+}
+.site-navigation { 
+    position: relative;
+    display: flex;    
+    flex-wrap: wrap;    
     font-size: 16px;    
     line-height: 18px;
     
@@ -161,16 +169,16 @@ header ul {
     display: block;
 }
 
-.main-navigation {    
-    min-width: 324px;
-    min-height: 17px;      
-    line-height: 18px;   
+.user-navigation{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 290px;    
 }
 .user-navigation-list  {
     display: flex;        
     flex-wrap: wrap; 
     position: relative;    
-    min-width: 245px;     
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;       
@@ -178,7 +186,7 @@ header ul {
 .user-navigation-list a {
     display: block;
     background-color: rgba(255, 255, 255, 0.2); 
-    margin: 20px 10px;
+    margin: 20px 5px;
 }
 .search-button  {    
     min-width: 32px;
@@ -295,7 +303,7 @@ header ul {
     box-sizing: padding-box;
 }
 .search-form input:hover{
-    border: 2px solid #c7c6c5;    
+    box-shadow: 0 0 0 1px #c7c6c5;   
 }
 .search-form input:focus{
     font-weight: 700;
@@ -344,6 +352,7 @@ header ul {
     background-color: #f8f7f4; 
     border-radius: 5px;       
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);   
+    
 }
 .form-enter input,
 .form-search input {    
@@ -359,15 +368,61 @@ header ul {
     position: absolute;
     top: 60px;
     right: 130px;
+    min-width: 277px;
+    min-height: 214px;
+    box-sizing: content-box;
     z-index: 999;
     display:none;
 }
 .form-enter input {
     width: 240px;
     padding: 10px 15px;    
-    margin: 20px;     
-    
+    margin: 20px; 
     box-sizing: border-box;
+    
+}
+.form-enter input:hover{
+    box-shadow: 0 0 0 1px #c7c6c5;     
+}
+.form-enter input:focus{
+    font-weight: 700;
+    color: #323232;   
+}
+.form-enter input:focus::-webkit-input-placeholder { 
+    color: transparent; 
+}
+.form-enter input:focus::-moz-placeholder {
+    color: transparent;
+}
+.form-enter input:focus:-moz-placeholder { 
+    color: transparent;
+}
+.form-enter input:focus:-ms-input-placeholder {
+    color: transparent; 
+}
+.form-enter input::-webkit-input-placeholder, { 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.form-enter input::-moz-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.form-enter input:-moz-placeholder { 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.form-enter input:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
 }
 
 .form-enter input:first-child {
@@ -616,41 +671,61 @@ label[for="product-2"]:active{
 label[for="product-3"]:active{
     outline: rgb(59, 153, 252) auto 5px;
 }
+.special-offer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.special-offer-wrapper {
+    position: relative;
+    width: 1200px;   
+    margin-bottom: 40px; 
+    
+}
+.special-offer-center {
+    width: 1140px;    
+    margin: 0 auto;
+    
+}
+.special-offer-wrapper .special-offer-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .special-offer h2 {
     margin: 20px;
     font-size: 35px;
     line-height: 41px;
 }
-.special-offer p {  
-     
-    margin: 10px 20px;
-    font-size: 18px;
-    line-height: 22px;
-    
-}
-.special-offer-raspberry {      
-    margin-bottom: 40px;
+.special-offer-raspberry {     
+    width: 560px;  
+    min-height: 230px; 
+    padding-top: 5px;
     background-image: url("../img/background/raspberry-bg.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     background-color: #ad5273;
-    border-radius: 15px;   
-    width: 560px; 
+    border-radius: 15px;       
     
 }
 .special-offer-chocolate {  
-    margin-bottom: 40px;
+    width: 560px;
+    min-height: 230px;  
+    padding-top: 5px;  
     background-image: url("../img/background/chocolate-bg.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     background-color: #5e3620;
-    border-radius: 15px;   
-    width: 560px; 
+    border-radius: 15px;     
     
 }
-.special-offer-raspberry p,
-.special-offer-chocolate p {
-    margin-bottom: 70px;
+.special-offer-text {
+    margin-bottom: 30px;
+    margin: 10px 20px;
+    font-size: 18px;
+    line-height: 22px;
 }
 .button-raspberry,
 .button-chocolate {    
@@ -660,7 +735,7 @@ label[for="product-3"]:active{
 .button-chocolate-container,
 .button-raspberry-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end;    
 }
 
 
@@ -942,16 +1017,59 @@ article a {
 }
 
 .subscription-mail input {
-    padding: 10px 15px;
+    padding: 10px 15px;    
     width: 365px;
-    border: 1px solid #999999;
+    border: 1px solid #c7c6c5;
     border-radius: 5px;
+    color: #c7c6c5;
+    box-sizing: border-box;     
+}
+.subscription-mail input:hover{    
+    box-shadow: 0 0 0 1px #c7c6c5;   
+}
+.subscription-mail input:focus{
+    font-weight: 700;
+    color: #323232;   
+}
+.subscription-mail input:focus::-webkit-input-placeholder { 
+    color: transparent; 
+}
+.subscription-mail input:focus::-moz-placeholder {
+    color: transparent;
+}
+.subscription-mail input:focus:-moz-placeholder { 
+    color: transparent;
+}
+.subscription-mail input:focus:-ms-input-placeholder {
+    color: transparent; 
+}
+.subscription-mail input::-webkit-input-placeholder, { 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
     color: #999999;
-    box-sizing: border-box;  
-   
+}
+.subscription-mail input::-moz-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.subscription-mail input:-moz-placeholder { 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.subscription-mail input:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
 }
 .subscription-mail button {  
-    padding: 10px;        
+    padding: 10px;    
+    margin: 10px;    
 }
 .location  {
     position: relative;
@@ -1059,6 +1177,7 @@ article a {
     width: 420px;
     background-color: #f8f7f4;  
     border-radius: 10px;    
+    box-sizing: content-box;
 }
 
 .feedback-form legend {
@@ -1079,6 +1198,88 @@ article a {
     margin-bottom: 20px;
     padding: 10px 15px;
     border-radius: 5px;    
+    box-sizing: border-box;
+}
+.feedback-form input:hover,
+.feedback-form textarea:hover{    
+    box-shadow: 0 0 0 1px #c7c6c5;  
+}
+.feedback-form input:focus,
+.feedback-form textarea:focus{
+    font-weight: 700;
+    color: #323232;   
+}
+.feedback-form input:focus::-webkit-input-placeholder { 
+    color: transparent; 
+}
+.feedback-form input:focus::-moz-placeholder {
+    color: transparent;
+}
+.feedback-form input:focus:-moz-placeholder { 
+    color: transparent;
+}
+.feedback-form input:focus:-ms-input-placeholder {
+    color: transparent; 
+}
+.feedback-form input::-webkit-input-placeholder, { 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.feedback-form input::-moz-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.feedback-form input:-moz-placeholder { 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.feedback-form input:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.feedback-form textarea:focus::-webkit-input-placeholder { 
+    color: transparent; 
+}
+.feedback-form textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+.feedback-form textarea:focus:-moz-placeholder { 
+    color: transparent;
+}
+.feedback-form textarea:focus:-ms-input-placeholder {
+    color: transparent; 
+}
+.feedback-form textarea::-webkit-input-placeholder, { 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.feedback-form textarea::-moz-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.feedback-form textarea:-moz-placeholder { 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
+}
+.feedback-form textarea:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #999999;
 }
 .feedback-form textarea {
     min-width: 390px;
