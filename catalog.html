@@ -24,13 +24,15 @@
 							<nav class="main-navigation">
 								<ul class="site-navigation">
 									<li>
-										<a class="check" href="#" title="Переход на страницу каталога">Каталог</a>
+										<a class="site-navigation-item check" href="#" title="Переход на страницу каталога">Каталог</a>
 										<ul class="sub-menu">
 											<li>
+												<p>
 												<a class="sub-menu-new" href="#" title="Переход в раздел новинки">Новинки</a>
+												</p>
 											</li>
-											<li>
-												<a class="check-point" href="catalog.html" title="Переход в раздел сливочного мороженого">Сливочное</a>
+											<li class="check-point">
+												<a class="check-point-item" href="catalog.html" title="Переход в раздел сливочного мороженого">Сливочное</a>
 											</li>
 											<li>
 												<a href="#" title="Переход в раздел щербеты">Щербеты</a>
@@ -44,10 +46,10 @@
 										</ul>  
 									</li>
 									<li>
-										<a href="#" title="Информация о доставке и оплате" >Доставка и оплата</a>
+										<a class="site-navigation-item" href="#" title="Информация о доставке и оплате" >Доставка и оплата</a>
 									</li>
 									<li>
-										<a href="#" title="Информация о компании">О компании</a>
+										<a class="site-navigation-item" href="#" title="Информация о компании">О компании</a>
 									</li>
 								</ul>
 							</nav>
@@ -152,12 +154,12 @@
 										<p>Сортировка:</p>
 										<div class="background-form select-sort">			
 											<ul class="select">
-												<li> По популярности
+												<li> <a href="#" title="выбор пункта по полулярности"> По популярности</a>
 													<ul class="sub-select">
-														<li>По популярности</li>
-														<li>Сначала недорогие</li>
-														<li>Сначала дорогие</li>
-														<li>По жирности</li>
+														<li><a href="#" title="выбор пункта по полулярности">По популярности</a></li>
+														<li><a href="#" title="выбор пункта сначала недорогие">Сначала недорогие</a></li>
+														<li><a href="#" title="выбор пункта сначала дорогие">Сначала дорогие</a></li>
+														<li><a href="#" title="выбор пункта по жирности">По жирности</a></li>
 													</ul>
 												</li>
 											</ul>	
@@ -169,8 +171,8 @@
 											<div class="scale">
 												<div class="bar" style="margin-left: 20%; width: 40%"></div>
 											</div>
-											<div class="toggle toggle-min"></div>
-											<div class="toggle toggle-max"></div>										
+											<div class="toggle toggle-min" tabindex="0"></div>
+											<div class="toggle toggle-max" tabindex="0"></div>										
 										</div>	
 									</div>
 									<div class="form-sort-item">

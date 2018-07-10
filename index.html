@@ -11,9 +11,9 @@
       <link href="css/style.css" rel="stylesheet">      
   </head>
   <body>
-    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <input class="visually-hidden product-1" type="radio" name="toggle" id="product1" checked>
+    <input class="visually-hidden product-2" type="radio" name="toggle" id="product2">
+    <input class="visually-hidden product-3" type="radio" name="toggle" id="product3">
     <div class="site-wrapper">      
       <header class="page-header">
         <div class="container-flex">
@@ -24,23 +24,35 @@
               </div>
               <nav class="main-navigation">
                 <ul class="site-navigation">
-                  <li><a href="catalog.html" title="Переход на страницу каталога">Каталог</a>
+                  <li><a class="site-navigation-item" href="catalog.html" title="Переход на страницу каталога" tabindex="1">Каталог</a>
                     <ul class="sub-menu">
-                      <li><a class="sub-menu-new" href="#" title="Переход в раздел новинки">Новинки</a></li>
-                      <li><a href="catalog.html" title="Переход в раздел сливочного мороженого">Сливочное</a></li>
-                      <li><a href="#" title="Переход в раздел щербеты">Щербеты</a></li>
-                      <li><a href="#" title="Переход в раздел фрутовый лед">Фруктовый лед</a></li>
-                      <li><a href="#" title="Переход в раздел мелорин">Мелорин</a></li>
+                      <li>
+                        <p>
+                          <a class="sub-menu-new" href="#" title="Переход в раздел новинки">Новинки</a>
+                        </p>
+                      </li>
+                      <li>
+                        <a href="catalog.html" title="Переход в раздел сливочного мороженого">Сливочное</a>
+                      </li>
+                      <li>
+                        <a href="#" title="Переход в раздел щербеты">Щербеты</a>
+                      </li>
+                      <li>
+                        <a href="#" title="Переход в раздел фрутовый лед">Фруктовый лед</a>
+                      </li>
+                      <li>
+                        <a href="#" title="Переход в раздел мелорин">Мелорин</a>
+                      </li>
                     </ul>  
                   </li>
-                  <li><a href="#" title="Информация о доставке и оплате" >Доставка и оплата</a></li>
-                  <li><a href="#" title="Информация о компании">О компании</a></li>
+                  <li><a class="site-navigation-item" href="#" title="Информация о доставке и оплате" tabindex="2" >Доставка и оплата</a></li>
+                  <li><a class="site-navigation-item" href="#" title="Информация о компании" tabindex="3">О компании</a></li>
                 </ul>
               </nav>
               <nav class="user-navigation">
                 <ul class="user-navigation-list">
                   <li>
-                    <a href="#" class="search-button" title="кнопка для вывода поля поиска"></a>
+                    <a href="#" class="search-button" title="кнопка для вывода поля поиска" tabindex="4"></a>
                     <ul class="form-search">
                       <li>
                         <form class="search-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
@@ -50,7 +62,7 @@
                     </ul>
                   </li>
                   <li class="login-link">
-                    <a class="login-link-button" href="login.html" title="кнопка для входа">Вход</a>
+                    <a class="login-link-button" href="login.html" title="кнопка для входа" tabindex="5">Вход</a>
                     <ul class="form-enter">
                       <li>
                           <form class="enter-form visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
@@ -68,14 +80,14 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#" class="basket" title="кнопка для просмотра корзины">Пусто</a>
+                    <a href="#" class="basket" title="кнопка для просмотра корзины" tabindex="6">Пусто</a>
                   </li>
                 </ul>       
               </nav>           
               <div class="info">
                 <span class="work-time">С 10 до 20 ежедневно</span> 
                 <span class="phone-number">
-                  <a href="tel:88124502525" title="телефон для связи">8 812 450-25-25</a>
+                  <a href="tel:88124502525" title="телефон для связи" tabindex="7">8 812 450-25-25</a>
                 </span>
               </div>  
             </div>  
@@ -87,20 +99,20 @@
         <div class="container-promo">                   
           <section class="promo">         
             <div class="slider-controls">
-              <label for="product-1">Первый</label>
-              <label for="product-2">Второй</label>
-              <label for="product-3">Третий</label>
+              <label for="product1"  tabindex="8" >Первый</label>
+              <label for="product2" >Второй</label>
+              <label for="product3" >Третий</label>
             </div>
             <ul class="slider-list">
-              <li class="slider-item slide" id="slide1">
+              <li class="slider-item slide slide-1">
                 <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
                 <a class="button slide-button" href="#">Давайте оба!</a>
               </li>
-              <li class="slider-item slide" id="slide2">
+              <li class="slider-item slide slide-2">
                 <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
                 <a class="button slide-button" href="#">Давайте оба!</a>
               </li>
-              <li class="slider-item slide" id="slide3">
+              <li class="slider-item slide slide-3">
                 <h3 class="slide-title">
                   Пломбир с помадкой и клубничный щербет
                 </h3>
