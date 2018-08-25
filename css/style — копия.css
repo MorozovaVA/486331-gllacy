@@ -10,7 +10,7 @@ body {
      
 }
 .site-wrapper {
-    min-width: 1200px;        
+    width: 1200px;        
     margin: 0 auto;
     padding: 0 55px;
     background-color: #849d8f;
@@ -23,7 +23,6 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding: 0 55px;
-    background-color: #849d8f;
 }
 /* Стилизация header */
 
@@ -541,27 +540,6 @@ header ul {
 .container-promo {
     width: 1200px;    
     
-}
-.container-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.container-wrapper {
-    position: relative;
-    width: 1200px;    
-    
-}
-.container-center {
-    width: 1146px; 
-    margin: 0 auto;
-    padding: 0 27px;
-}
-.container-wrapper .container-center {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 .promo  {
     position: relative;
